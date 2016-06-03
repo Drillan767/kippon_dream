@@ -1,0 +1,6 @@
+/config/secrets.yml
+/config/database.yml
+/.idea
+/log/*
+!/log/.keep
+/tmp
