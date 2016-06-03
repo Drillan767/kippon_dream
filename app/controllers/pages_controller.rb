@@ -4,6 +4,10 @@ class PagesController < ApplicationController
     @titre = 'Accueil'
   end
 
+  def membres
+    @titre = 'Membres'
+  end
+
   def about
     @titre = 'À propos'
   end
