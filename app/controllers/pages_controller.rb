@@ -8,6 +8,10 @@ class PagesController < ApplicationController
     @titre = 'Membres'
   end
 
+  def magazines
+
+  end
+
   def about
     @titre = 'À propos'
   end

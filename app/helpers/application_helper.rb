@@ -2,7 +2,7 @@ module ApplicationHelper
 
   #Retourne un titre
   def titre
-    base_titre = "Kippon Dream"
+    base_titre = 'Kippon Dream'
     if @titre.nil?
       base_titre
     else

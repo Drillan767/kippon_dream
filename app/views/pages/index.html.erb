@@ -1,9 +1,100 @@
-<h1>Accueil</h1>
+<section class="actualites">
+  <div class="row">
+    <article>
+      <div class="col-md-offset-1 col-md-3 voter-mag-papier">
 
-<%= link_to('À propos', '/a-propos')%>
+        <h1>Actualités</h1>
+        <p>Nous avons besoin de vous !</p>
+        <p>Répondez à ce sondage pour élire vos séries préférés (du numéro papier)</p>
+        <button type="button" class="btn btn-primary btn-lg-voter center-block" data-toggle="modal" data-target="#myModal">
+          Voter ici
+        </button>
 
-<%= link_to('Membres', '/nos-membres')%>
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog modal-vote" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              </div>
+              <div class="modal-body">
+                <iframe src="https://docs.google.com/forms/d/1RFIKrgaQwVhMJ177nqPhNh0AnDe3HINKJPtXh1aj8NU/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Chargement en cours...</iframe>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
 
-<%= link_to('Mentions légales', '/mentions-legales')%>
 
-<%= link_to('Membres', '/nos-membres') %>
+      </div>
+
+      <p class="col-md-2">Bienvenue sur le premier site internet du Kippon Dream ! Découvrez sur ce site toutes nos séries, magazines, mais aussi nos membres et l'actualité de notre association. Le site a été entièrement réalisé par Twildette et Kuro et est encore en construction, nous espérons toutefois que vous apprécierez la visite, n'hésitez pas à nous donner des retours ! </p>
+
+      <p class="col-md-2">La Japan expo est arrivée... Découvrez le planning de nos auteurs et passez nous voir si le coeur vous en dit ! Vous trouverez sur notre stand notre tout premier magazine papier ainsi que divers goodies proposés par les auteurs. Nos membres ne mordent pas promis, ils apprécieront votre visite :D Sur ce, mata ne !</p>
+    </article>
+
+    <div class="flex-japan col-md-4">
+      <aside>
+        <div>
+          <%= image_tag('japanexpo.png', :class => 'center-block', alt: 'Japan Expo 2016') %>
+          <p class="date_je">Du 7 au 10 juillet</p>
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary btn-lg-planning" data-toggle="modal" data-target="#japanExpo">
+            Planning des auteurs
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="japanExpo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog modal-planning" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                  <%= image_tag('planning.jpg', alt: 'planning auteurs', :class => 'planning-je')%>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="presentation">
+  <div class="cadre container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="projet_propos col-md-8">
+          <div class="col-md-12">
+            <h1>A PROPOS DU PROJET, QU'EST-CE QUE LE KIPPON DREAM ?</h1>
+
+            <p>Le Kippon Dream est un webzine de prépublication francophone de bandes-dessinées et manga avec déjà plus de 15 numéros à son actif et un staff motivé et dynamique. Ce projet est en perpétuel développement et si toute l'équipe travaille de façon bénévole et par passion pour le moment, nous avons pour objectif de nous professionnaliser afin de se faire une place dans le milieu de la bd francophone.</p>
+          </div>
+
+          <div class="col-md-12">
+            <h2>Présentation générale des magazines</h2>
+
+            <p>Du contenu exclusif et plus de 2000 pages du Kippon Dream vous attendent ! <br />
+              Ici vous trouverez l'ensemble de nos numéros en lecture libre ! <br />
+              Vous découvrirez dans ces derniers l'ensemble de nos projets bd/manga, quelques articles et des interviews des membres de l'équipe (ainsi que des guests parfois!)</p>
+
+            <p>Il est aussi important de savoir que nos numéros sont, à partir du sixième, partagés en deux groupes, les pairs et les impairs. <br />
+              Cela nous permet de vous offrir un numéro tous les un mois et demi et d'avoir à chaque fois un contenu suffisant et mieux organisé. <br />
+              Il est à noter que chaque série reste dans son groupe, cela facilite ainsi la lecture et vous pouvez retrouver vos séries préférées selon les numéros.</p>
+          </div>
+        </div>
+        <div class="col-md-4 projet_image">
+          <%= image_tag('personnage_pain.png', alt: 'Païn')%>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>

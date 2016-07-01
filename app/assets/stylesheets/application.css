@@ -1,4 +1,402 @@
-h1{
+/*
+index.css
+*/
+
+header {
+    background: url('background/background01.png') no-repeat #41a4d5;
+    background-size: 100% 100%;
+}
+
+.image_header {
+    width: 453px;
+}
+
+header h1 {
+    font-size: 4em;
+}
+
+.header-logo:hover{
+    background-color: transparent;
+}
+
+aside {
+    border: 5px solid white;
+    padding: 20px;
+}
+
+aside p {
+    width: 100%;
+    margin: auto;
     text-align: center;
-    color: red;
+    font-size: 3em;
+
+}
+
+.date_je{
+    text-align: center !important;
+    font-size: 2.2em !important;
+}
+
+aside a {
+    font-size: 3.5em;
+    text-align: center;
+    border: 3px solid white;
+    margin-bottom: 20px;
+    color: white;
+}
+
+article h1 {
+    text-align: center;
+    border: 3px solid white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.flex-japan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.actualites {
+    background-color: #41a4d5;
+    color: white;
+    height: 390px;
+}
+
+.actualites p {
+    text-align: justify;
+    font-size: 1.2em;
+}
+
+.actualites p:nth-child(2) {
+    margin-top: 17px;
+}
+
+.actualites p:nth-child(3) {
+    margin-top: 17px;
+}
+
+#sous-titre {
+    text-align:center;
+}
+
+.actualites {
+    padding-top: 35px;
+}
+
+.modal-vote {
+    width: 800px;
+}
+
+.modal-planning {
+    width: 70%;
+}
+
+.planning-je {
+    width: 100%;
+}
+
+.btn-lg-planning {
+    padding: 40px 30px;
+    font-size: 2.5em;
+    line-height: 1.3333333;
+    border-radius: 6px;
+}
+
+.btn-lg-voter {
+    padding: 25px 80px;
+    font-size: 2.5em;
+    line-height: 1.3333333;
+    border-radius: 6px;
+}
+
+.presentation {
+    background: url('background/background04.jpg') #f69c00 no-repeat;
+    background-size: 100% 100%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.presentation p {
+    text-align: justify
+}
+
+.projet_image {
+    position: absolute;
+    bottom: -33px;
+    right: 0;
+}
+
+/* style.css */
+
+@font-face {
+    font-family: 'playtimewithhottoddiesobliqRg';
+    src: url('fonts/PlaytimeOblique-webfont.eot');
+    src: url('fonts/PlaytimeOblique-webfont.eot?#iefix') format('embedded-opentype'),
+    url('fonts/PlaytimeOblique-webfont.woff') format('woff'),
+    url('fonts/PlaytimeOblique-webfont.ttf') format('truetype'),
+    url('fonts/PlaytimeOblique-webfont.svg#playtimewithhottoddiesobliqRg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'reis';
+    src: url('fonts/REIS-Regular.otf');
+    src: url('fonts/REIS-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'zenzai';
+    src: url('fonts/ZenzaiItacha.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+    font-family: "reis", Helvetica, sans-serif;
+}
+
+h2 {
+    font-size: 3em;
+    font-family: "reis", Helvetica, sans-serif;
+}
+
+p {
+    font-family: 'playtimewithhottoddiesobliqRg', Helvetica, sans-serif;
+}
+
+a {
+    font-family: 'playtimewithhottoddiesobliqRg', Helvetica, sans-serif;
+    color: white;
+}
+
+.navbar a {
+    font-size: 35px;
+    font-family: "reis", Helvetica, sans-serif;
+    color: black;
+}
+
+.navbar {
+    top:0;
+    right:0;
+    margin: auto;
+    text-align:center;
+}
+
+.navbar-default {
+    opacity: 0.7;
+}
+
+.nav {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.nav li {
+    position: relative;
+    display: inline-block;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.barre_nav1 {
+    background-color: #FFFFFF;
+    opacity: 0.5;
+    padding: 20px;
+    margin-right: -5px;
+}
+
+.barre_nav2 {
+    background-color: #FFFFFF;
+    opacity: 0.5;
+    padding: 20px;
+    margin-left: -5px;
+}
+
+.nav li a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+}
+
+.index-lien {
+    padding: 0 0 15px 0;
+}
+
+li img {
+    width: 135px;
+    height: 136px;
+    margin-top: 25px;
+}
+
+.bouton_contact {
+    border: 5px solid white;
+    color: white;
+    font-size: 3em;
+    padding: 8px 20px 8px 20px;
+    margin-left: 80px;
+    margin-top: 50px;
+}
+
+footer {
+    background-color: #f69c00;
+}
+
+footer p {
+    text-align: center;
+    font-size: 2em;
+    color: white;
+}
+
+footer p:nth-child(3) {
+    margin-bottom: 20px;
+}
+
+.mentions {
+    background-color: #242424;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.cadre {
+    width: 70%;
+    background-color: #FFFFFF;
+    border: 2px solid black;
+}
+
+@media (min-width: 768px) {
+    .navbar-nav {
+        float: none;
+        margin: 0;
+        margin-top: -25px;
+    }
+
+    .navbar-nav li {
+        float: none;
+    }
+
+    .index-lien {
+        padding: 0 0 15px 0 !important;
+    }
+
+    .navbar-nav li a {
+        padding: 15px 20px;
+    }
+
+    .navbar-nav > li > a {
+        padding: 15px 20px;
+    }
+}
+
+/* membres.css */
+
+#staff h1 {
+    text-align: center;
+    background: url(background/barre-staff.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 -15px;
+}
+
+.barre-membres{
+    margin: 20px -15px;
+}
+
+.member-list{
+    margin: 0;
+}
+
+#auteurs h1 {
+    text-align: center;
+    background: url(background/barre-membres.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#anciens h1 {
+    text-align: center;
+
+}
+
+#staff p {
+    margin-left: 45px;
+    font-size: 2em;
+}
+
+#auteurs p {
+    margin-left: 45px;
+    font-size: 2em;
+}
+
+.membres {
+    width: 80%;
+    cursor: pointer;
+}
+
+.header-bloc {
+    font-size: 1.5em;
+    width: 50%;
+    margin: auto;
+    background-color: black;
+    color: white;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    opacity: 0.8;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-nom {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.flex {
+    text-align: center;
+}
+
+.liste-serie {
+    text-align: justify;
+}
+
+.img-presentation {
+    width: 100%;
+}
+
+.modal-header h2 {
+    text-align: center;
+    background: url(background/barre-staff.jpg) no-repeat;
+    background-size: 100% 100%;
+    color: white;
+}
+
+.modal-membres {
+    width: 800px;
+}
+
+.modal-body h3 {
+    text-align: center;
+}
+
+.flex-pair {
+    display: flex;
 }
