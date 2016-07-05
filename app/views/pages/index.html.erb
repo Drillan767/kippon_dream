@@ -3,6 +3,37 @@
     <article>
       <div class="col-md-offset-1 col-md-3 voter-mag-papier">
 
+        <header>
+          <nav class="navbar navbar-static-top">
+            <div class="container-fluid">
+              <ul class="nav navbar-nav">
+                <!-- À optimiser... -->
+						<span class="barre_nav1">
+						<li><%= link_to('Magazines', '/magazines')%></li>
+						<li> <a href="#">LES SERIES</a></li>
+						<li> <a href="#">ACTUALITES</a></li>
+					</span>
+                <li>
+                  <%= link_to image_tag('KD.png',:class=> 'header-logo', alt: 'Logo menu kippon Dream'), '/', :class => 'index-lien' %>
+                </li>
+					<span class="barre_nav2">
+					<li> <%= link_to('LES MEMBRES', '/membres') %></li>
+					<li> <a href="#">CONTACT</a></li>
+					<li> <a href="#">RECRUTEMENT</a></li>
+					</span>
+              </ul>
+            </div>
+          </nav>
+
+          <h1 id="sous-titre">Le webzine de prépublication de bandes-dessinées</h1>
+
+          <div class="center-block image_header">
+            <a href="https://www.mangadraft.com/magazine/74-kippon-dream">
+              <%= image_tag("lecture_webzine.png", alt: "bouton lecture magazines") %>
+            </a>
+          </div>
+        </header>
+
         <h1>Actualités</h1>
         <p>Nous avons besoin de vous !</p>
         <p>Répondez à ce sondage pour élire vos séries préférés (du numéro papier)</p>

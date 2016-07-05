@@ -1,6 +1,6 @@
 /config/secrets.yml
 /config/database.yml
-/.idea
+/.idea/*
 /log/*
 !/log/.keep
 /tmp

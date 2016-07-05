@@ -1,0 +1,67 @@
+/* ACCUEIL */
+
+p {
+	font-size: 1em;
+}
+
+.actualites p {
+	font-size: 1.5em;
+}
+
+.actualites {
+	height: 520px;
+}
+
+.voter-mag-papier p {
+	font-size: 2em;
+}
+	
+.flex-japan {
+	height: 420px;
+}
+
+.cadre {
+	width: 85%;
+}
+
+.presentation p {
+	font-size: 1.6em !important;
+}
+
+/* MAGAZINE */
+
+header p {
+	font-size: 2em;
+}
+
+header h1 {
+	font-size: 4em;
+}
+
+.dernier_numero h1 {
+	font-size: 2em;
+}
+
+.dernier_numero {
+	font-size: 4.5em;
+}
+
+.description_numero {
+	font-size: 2em;
+}
+
+.magazines {
+	height: 9450px;
+}
+
+.magazines p {
+	font-size: 1.7em;
+}
+
+.numero-div {
+	height: 575px;	
+}
+
+.image-couv {
+	margin-left: 115px;
+}

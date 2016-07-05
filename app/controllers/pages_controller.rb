@@ -9,7 +9,7 @@ class PagesController < ApplicationController
   end
 
   def magazines
-
+    @titre = 'Magazines'
   end
 
   def about

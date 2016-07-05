@@ -1,14 +1,3 @@
-$(document).ready(function() {
-        var currentURL = document.location.href;
-        var page = currentURL.split('/');
-        var file = page[page.length -1];
-        if(file == 'membres' || file == 'magazines'){
-            $('header').css('background-image', 'url(\'assets/background/'+file+'.jpg\')');
-        }
-        else{
-            $('header').css('background-image', 'url(\'background01.jpg\'');
-        }
-});
 
 /* STAFF */
 
@@ -32,15 +21,15 @@ $('#brandy').click(function(){
         '<div class="col-md-6">'+
         '<div class="flex">'+
         '<p>Ses projets : </p>'+
-        '<div class="flex-pair"><img src="images/pair.png" alt="pair" />'+
-        '<img src="images/impair.png" alt="impair" />'+
+        '<div class="flex-pair"><img src="assets/pair.png" alt="pair" />'+
+        '<img src="assets/impair.png" alt="impair" />'+
         '</div>' +
         '</div>'+
         '<p> </p>'+
         '<p class="liste-serie"></p>'+
         '</div>'+
         '<div class="col-md-6">'+
-        '<img src="images/presentation/brandy.png" alt="Brandy" class="img-presentation">'+
+        '<img src="/assets/presentation/Brandy.png" alt="Brandy" class="img-presentation">'+
         '</div>'+
         '</div>'+
         '</div>'+
@@ -72,13 +61,13 @@ $('#ataru').click(function(){
         '<div class="col-md-6">'+
         '<div class="flex">'+
         '<p>Ses projets : </p>'+
-        '<img src="images/impair.png" alt="impair" />'+
+        '<img src="assets/impair.png" alt="impair" />'+
         '</div>'+
         '<p>O.S.E.F</p>'+
         '<p class="liste-serie"> #15 - One-Shot </p>'+
         '</div>'+
         '<div class="col-md-6">'+
-        '<img src="images/presentation/ataru.png" alt="Ataru" class="img-presentation">'+
+        '<img src="/assets/presentation/ataru.png" alt="Ataru" class="img-presentation">'+
         '</div>'+
         '</div>'+
         '</div>'+
@@ -106,7 +95,7 @@ $('#ayu').click(function(){
         '<div class="col-md-6">'+
         '<div class="flex">'+
         '<p>Ses projets : </p>'+
-        '<img src="images/pair.png" alt="pair" />'+
+        '<img src="assets/pair.png" alt="pair" />'+
         '</div>'+
         '<h3>Animix</h3>'+
         '<p class="liste-serie"> #1 Chapitre 1 Partie 1 <br/> #2 Chapitre 1 Partie 2 <br/> #3 Chapitre 1 Partie 3 <br/>' +
@@ -114,7 +103,7 @@ $('#ayu').click(function(){
         '#14 - Chapitre 6 </p>'+
         '</div>'+
         '<div class="col-md-6">'+
-        '<img src="images/presentation/ayu.png" alt="Ayu" class="img-presentation">'+
+        '<img src="/assets/presentation/ayu.png" alt="Ayu" class="img-presentation">'+
         '</div>'+
         '</div>'+
         '</div>'+
@@ -139,14 +128,14 @@ $('#christ').click(function(){
         '<div class="col-md-6">'+
         '<div class="flex">'+
         '<p>Ses projets : </p>'+
-        '<img src="images/pair.png" alt="pair" />'+
+        '<img src="assets/pair.png" alt="pair" />'+
         '</div>'+
         '<h3>Blood Sorcerer</h3>'+
         '<p class="liste-serie"> #8 - One Shot <br/> #10 - Chapitre 1 <br/> #12 - Chapitre 2 <br/>' +
         '#14 - Chapitre 3 </p>'+
         '</div>'+
         '<div class="col-md-6">'+
-        '<img src="images/presentation/christ.png" alt="Christ" class="img-presentation">'+
+        '<img src="/assets/presentation/Christ.png" alt="Christ" class="img-presentation">'+
         '</div>'+
         '</div>'+
         '</div>'+
@@ -177,14 +166,14 @@ $('#emu').click(function(){
         '<div class="col-md-6">'+
         '<div class="flex">'+
         '<p>Ses projets : </p>'+
-        '<img src="images/impair.png" alt="impair" />'+
+        '<img src="assets/impair.png" alt="impair" />'+
         '</div>'+
         '<h3>Infinite Revenge</h3>'+
         '<p class="liste-serie"> #7 - One Shot<br/> #9 - Chapitre 1 <br/> #11 - Chapitre 2 <br/>' +
         '#13 - Chapitre 3 <br/> #15 - Chapitre 4 </p>'+
         '</div>'+
         '<div class="col-md-6">'+
-        '<img src="images/presentation/emu.png" alt="Emueiichi" class="img-presentation">'+
+        '<img src="/assets/presentation/Emu.png" alt="Emueiichi" class="img-presentation">'+
         '</div>'+
         '</div>'+
         '</div>'+
@@ -211,7 +200,7 @@ $('#julien').click(function(){
         '<div class="col-md-6">'+
         '<div class="flex">'+
         '<p>Ses projets : </p>'+
-        '<img src="images/impair.png" alt="impair" />'+
+        '<img src="assets/impair.png" alt="impair" />'+
         '</div>'+
         '<h3>Dawn of the Sorain</h3>'+
         '<p class="liste-serie"> #7 - One Shot <br/> #7 - Chapitre 1 <br/> #9 - Chapitre 2 <br/>' +
@@ -220,7 +209,7 @@ $('#julien').click(function(){
         '<p class="liste-serie"> #15 One Shot</p>'+
         '</div>'+
         '<div class="col-md-6">'+
-        '<img src="images/presentation/julien.png" alt="Julien Mestre" class="img-presentation">'+
+        '<img src="/assets/presentation/Julien.png" alt="Julien Mestre" class="img-presentation">'+
         '</div>'+
         '</div>'+
         '</div>'+
@@ -245,8 +234,8 @@ $('#kowasu').click(function(){
         '<div class="col-md-6">'+
         '<div class="flex">'+
         '<p>Ses projets : </p>'+
-        '<div class="flex-pair"><img src="images/pair.png" alt="pair" />'+
-        '<img src="images/impair.png" alt="impair" />'+
+        '<div class="flex-pair"><img src="assets/pair.png" alt="pair" />'+
+        '<img src="assets/impair.png" alt="impair" />'+
         '</div>' +
         '</div>'+
         '<h3>No-Life Makoto</h3>'+
@@ -254,7 +243,7 @@ $('#kowasu').click(function(){
         '#4 - Chapitre 4 <br/> #5 Chapitre - 5 <br/> #6 - Chapitre 6 <br/> #7 - Chapitre 7 <br/ #8 - Chapitre 8</p>'+
         '</div>'+
         '<div class="col-md-6">'+
-        '<img src="images/presentation/kowasu.png" alt="Kowasu" class="img-presentation">'+
+        '<img src="/assets/presentation/Kowasu.png" alt="Kowasu" class="img-presentation">'+
         '</div>'+
         '</div>'+
         '</div>'+
@@ -283,14 +272,14 @@ $('#kuro').click(function(){
         '<div class="col-md-6">'+
         '<div class="flex">'+
         '<p>Ses projets : </p>'+
-        '<img src="images/impair.png" alt="impair" />'+
+        '<img src="assets/impair.png" alt="impair" />'+
         '</div>'+
         '<h3>Dawn of the Sorain</h3>'+
         '<p class="liste-serie"> #7 - One Shot <br/> #7 - Chapitre 1 <br/> #9 - Chapitre 2 <br/>' +
         '#11 - Chapitre 3 <br/> #13 - Chapitre 4 </p>'+
         '</div>'+
         '<div class="col-md-6">'+
-        '<img src="images/presentation/kuro.png" alt="Kuro" class="img-presentation">'+
+        '<img src="/assets/presentation/Kuro.png" alt="Kuro" class="img-presentation">'+
         '</div>'+
         '</div>'+
         '</div>'+
@@ -317,13 +306,13 @@ $('#larryon').click(function(){
         '<div class="col-md-6">'+
         '<div class="flex">'+
         '<p>Ses projets : </p>'+
-        '<img src="images/pair.png" alt="pair" />'+
+        '<img src="assets/pair.png" alt="pair" />'+
         '</div>'+
         '<p>Dragon(s) </p>'+
         '<p class="liste-serie"> #8 - One-Shot - <br />#10 - Chapitre 1 - <br /> #12 - Chapitre 2 - <br /> #14 - Chapitre 3 </p>'+
         '</div>'+
         '<div class="col-md-6">'+
-        '<img src="images/presentation/larryon.png" alt="Larryon class="img-presentation">'+
+        '<img src="/assets/presentation/Larryon.png" alt="Larryon class="img-presentation">'+
         '</div>'+
         '</div>'+
         '</div>'+
@@ -349,13 +338,13 @@ $('#lao').click(function(){
         '<div class="col-md-6">'+
         '<div class="flex">'+
         '<p>Ses projets : </p>'+
-        '<img src="images/pair.png" alt="pair" />'+
+        '<img src="assets/pair.png" alt="pair" />'+
         '</div>'+
         '<h3>Demon Spider</h3>'+
         '<p class="liste-serie"> #10 - One Shot <br/> #12 - Chapitre 1 </p>'+
         '</div>'+
         '<div class="col-md-6">'+
-        '<img src="images/presentation/lao.png" alt="Lao" class="img-presentation">'+
+        '<img src="/assets/presentation/Lao.png" alt="Lao" class="img-presentation">'+
         '</div>'+
         '</div>'+
         '</div>'+
@@ -383,13 +372,13 @@ $('#midori').click(function(){
         '<div class="col-md-6">'+
         '<div class="flex">'+
         '<p>Ses projets : </p>'+
-        '<img src="images/impair.png" alt="impair" />'+
+        '<img src="assets/impair.png" alt="impair" />'+
         '</div>'+
         '<h3> 3 coups avant l aube</h3>'+
         '<p class="liste-serie"> #Dream Cup - One Shot <br/> #15 - Chapitre 1</p>'+
         '</div>'+
         '<div class="col-md-6">'+
-        '<img src="images/presentation/midori.png" alt="Midori" class="img-presentation">'+
+        '<img src="/assets/presentation/Midori.png" alt="Midori" class="img-presentation">'+
         '</div>'+
         '</div>'+
         '</div>'+
@@ -417,14 +406,14 @@ $('#oz').click(function(){
         '<div class="col-md-6">'+
         '<div class="flex">'+
         '<p>Ses projets : </p>'+
-        '<img src="images/pair.png" alt="pair" />'+
+        '<img src="assets/pair.png" alt="pair" />'+
         '</div>'+
         '<h3>Blood Sorcerer</h3>'+
         '<p class="liste-serie"> #8 - One Shot <br/> #10 - Chapitre 1 <br/> #12 - Chapitre 2 <br/>' +
         '#14 - Chapitre 3 </p>'+
         '</div>'+
         '<div class="col-md-6">'+
-        '<img src="images/presentation/oz.png" alt="Oz" class="img-presentation">'+
+        '<img src="/assets/presentation/Oz.png" alt="Oz" class="img-presentation">'+
         '</div>'+
         '</div>'+
         '</div>'+
@@ -454,7 +443,7 @@ $('#smaiky').click(function(){
         '<div class="col-md-6">'+
         '<div class="flex">'+
         '<p>Ses projets : </p>'+
-        '<img src="images/impair.png" alt="impair" />'+
+        '<img src="assets/impair.png" alt="impair" />'+
         '</div>'+
         '<h3>Païn</h3>'+
         '<p class="liste-serie"> #1 - Chapitre 1 Partie 1 <br/> #2 - Chapitre 1 Partie 2 <br/> #3 - Chapitre 2 Partie 1 <br/>' +
@@ -462,7 +451,7 @@ $('#smaiky').click(function(){
         ' <br/> #13 - Chapitre 4 Partie 2 <br/> #15 - Chapitre 5 </p>'+
         '</div>'+
         '<div class="col-md-6">'+
-        '<img src="images/presentation/smaiky.png" alt="Smaiky" class="img-presentation">'+
+        '<img src="/assets/presentation/Smaiky.png" alt="Smaiky" class="img-presentation">'+
         '</div>'+
         '</div>'+
         '</div>'+
@@ -487,13 +476,13 @@ $('#thibault').click(function(){
         '<div class="col-md-6">'+
         '<div class="flex">'+
         '<p>Ses projets : </p>'+
-        '<img src="images/pair.png" alt="pair" />'+
+        '<img src="assets/pair.png" alt="pair" />'+
         '</div>'+
         '<h3>Symphony of Angels</h3>'+
         '<p class="liste-serie"> #12 - One Shot <br/> #14 - Chapitre 1 </p>'+
         '</div>'+
         '<div class="col-md-6">'+
-        '<img src="images/presentation/thibault.png" alt="Thibault Deboom" class="img-presentation">'+
+        '<img src="/assets/presentation/thibault.png" alt="Thibault Deboom" class="img-presentation">'+
         '</div>'+
         '</div>'+
         '</div>'+
@@ -521,13 +510,13 @@ $('#unico').click(function(){
         '<div class="col-md-6">'+
         '<div class="flex">'+
         '<p>Ses projets : </p>'+
-        '<img src="images/pair.png" alt="pair" />'+
+        '<img src="assets/pair.png" alt="pair" />'+
         '</div>'+
         '<h3>Skillnaden</h3>'+
         '<p class="liste-serie"> #4 - One Shot </p>'+
         '</div>'+
         '<div class="col-md-6">'+
-        '<img src="images/presentation/unico.png" alt="Unico" class="img-presentation">'+
+        '<img src="/assets/presentation/unico.png" alt="Unico" class="img-presentation">'+
         '</div>'+
         '</div>'+
         '</div>'+
@@ -557,12 +546,12 @@ $('#yumi').click(function(){
         '<div class="col-md-6">'+
         '<div class="flex">'+
         '<p>Ses projets : </p>'+
-        '<img src="images/pair.png" alt="pair" />'+
+        '<img src="assets/pair.png" alt="pair" />'+
         '</div>'+
         '<p>Projet en développement </p>' +
         '</div>'+
         '<div class="col-md-6">'+
-        '<img src="images/presentation/yumi.png" alt="Yumi" class="img-presentation">'+
+        '<img src="/assets/presentation/yumi.png" alt="Yumi" class="img-presentation">'+
         '</div>'+
         '</div>'+
         '</div>'+

@@ -1,0 +1,64 @@
+/* ACCUEIL */
+
+.actualites {
+		height: 490px;
+	}
+
+	.flex-japan {
+		height: 450px;
+	}
+
+	.presentation p {
+		font-size: 1.3em;
+	}
+
+	.aside {
+		padding: 35px;
+	}
+
+	.aside a {
+		margin-top: 10px;
+		font-size: 3.5em;
+	}
+
+/* MAGAZINE */
+
+header p {
+		font-size: 1.5em;
+	}
+
+	header h1 {
+		font-size: 3em;
+	}
+
+	.dernier_numero h1 {
+		font-size: 1.5em;
+	}
+
+	.dernier_numero {
+		font-size: 3em;
+	}
+
+	.description_numero {
+		font-size: 1.5em;
+	}
+
+	.magazines p {
+		font-size: 1.3em;
+	}
+
+	.flex-magazine h2{
+		font-size: 2.5em;
+	}
+
+	.cadre {
+		width: 80%;
+	}
+
+	.magazines {
+		height: 9450px;
+	}
+
+	.numero-div {
+		height: 575px;
+	}

@@ -7,6 +7,13 @@ header {
     background-size: 100% 100%;
 }
 
+header h1 {
+    text-align: center;
+}
+header p {
+    text-align: center;
+}
+
 .image_header {
     width: 453px;
 }
@@ -399,4 +406,83 @@ footer p:nth-child(3) {
 
 .flex-pair {
     display: flex;
+}
+
+/* membres.css */
+
+.derniere_sortie {
+    background-color: #41a4d5;
+    color: white;;
+}
+
+.derniere_sortie div {
+    height: 540px;
+}
+
+.dernier_numero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dernier_numero h1 {
+    border: 5px solid white;
+    padding: 15px;
+    margin-bottom: 50px;
+}
+
+.dernier_numero h1 {
+    text-align: justify;
+}
+
+.dernier_numero a {
+    text-decoration: underline;
+}
+
+.description_numero {
+    margin-left: 40px;
+}
+
+.flex-magazine {
+    display: flex;
+}
+
+.magazines {
+    background: url(background/bg_mags.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: #f69c00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.magazines h1 {
+    margin-left: 10%;
+    margin-bottom: 40px;
+}
+
+.magazines h2 {
+    margin-bottom: 30px;
+}
+
+.maagazines a {
+    margin-bottom: 10px;
+}
+
+.date-sortie {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.mangadraft {
+    margin-bottom: 15px;
+}
+
+.numero-margin {
+    margin-bottom: 90px;
+    margin-top: -60px;
 }

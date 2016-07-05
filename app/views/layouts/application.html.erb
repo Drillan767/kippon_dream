@@ -4,41 +4,13 @@
     <title><%= titre %></title>
 
     <%= stylesheet_link_tag 'bootstrap.min', 'application.css', media: 'all', 'data-turbolinks-track' => true %>
+    <%= stylesheet_link_tag 'sd', media: 'screen and (min-width:1200px)', 'data-turbolinks-track' => true %>
+    <%= stylesheet_link_tag 'hd', media: 'screen and (min-width:1600px)', 'data-turbolinks-track' => true %>
 
     <%= csrf_meta_tags %>
   </head>
   <body>
 
-  <header>
-    <nav class="navbar navbar-static-top">
-      <div class="container-fluid">
-        <ul class="nav navbar-nav">
-          <!-- À optimiser... -->
-						<span class="barre_nav1">
-						<li><%= link_to('Magazines', '/magazines')%></li>
-						<li> <a href="series.html">LES SERIES</a></li>
-						<li> <a href="actualites.html">ACTUALITES</a></li>
-					</span>
-          <li>
-            <%= link_to image_tag('KD.png',:class=> 'header-logo', alt: 'Logo menu kippon Dream'), '/', :class => 'index-lien' %>
-          </li>
-					<span class="barre_nav2">
-					<li> <%= link_to('LES MEMBRES', '/membres') %></li>
-					<li> <a href="contact.html">CONTACT</a></li>
-					<li> <a href="recrutement.html">RECRUTEMENT</a></li>
-					</span>
-        </ul>
-      </div>
-    </nav>
-
-    <h1 id="sous-titre">Le webzine de prépublication de bandes-dessinées</h1>
-
-    <div class="center-block image_header">
-      <a href="https://www.mangadraft.com/magazine/74-kippon-dream">
-        <%= image_tag("lecture_webzine.png", alt: "bouton lecture magazines") %>
-      </a>
-    </div>
-  </header>
 
   <%= yield %>
 
