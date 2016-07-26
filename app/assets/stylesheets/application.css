@@ -408,11 +408,12 @@ footer p:nth-child(3) {
     display: flex;
 }
 
-/* membres.css */
+/* magazines.css */
 
 .derniere_sortie {
     background-color: #41a4d5;
     color: white;;
+    margin-top: -10px;
 }
 
 .derniere_sortie div {
