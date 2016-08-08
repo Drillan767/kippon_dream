@@ -1,143 +1,6 @@
-/*
-index.css
-*/
-
-header {
-    background: url('background/background01.png') no-repeat #41a4d5;
-    background-size: 100% 100%;
-}
-
-header h1 {
-    text-align: center;
-}
-header p {
-    text-align: center;
-}
-
-.image_header {
-    width: 453px;
-}
-
-header h1 {
-    font-size: 4em;
-}
-
-.header-logo:hover{
-    background-color: transparent;
-}
-
-aside {
-    border: 5px solid white;
-    padding: 20px;
-}
-
-aside p {
-    width: 100%;
-    margin: auto;
-    text-align: center;
-    font-size: 3em;
-
-}
-
-.date_je{
-    text-align: center !important;
-    font-size: 2.2em !important;
-}
-
-aside a {
-    font-size: 3.5em;
-    text-align: center;
-    border: 3px solid white;
-    margin-bottom: 20px;
-    color: white;
-}
-
-article h1 {
-    text-align: center;
-    border: 3px solid white;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-.flex-japan {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.actualites {
-    background-color: #41a4d5;
-    color: white;
-    height: 390px;
-}
-
-.actualites p {
-    text-align: justify;
-    font-size: 1.2em;
-}
-
-.actualites p:nth-child(2) {
-    margin-top: 17px;
-}
-
-.actualites p:nth-child(3) {
-    margin-top: 17px;
-}
-
-#sous-titre {
-    text-align:center;
-}
-
-.actualites {
-    padding-top: 35px;
-}
-
-.modal-vote {
-    width: 800px;
-}
-
-.modal-planning {
-    width: 70%;
-}
-
-.planning-je {
-    width: 100%;
-}
-
-.btn-lg-planning {
-    padding: 40px 30px;
-    font-size: 2.5em;
-    line-height: 1.3333333;
-    border-radius: 6px;
-}
-
-.btn-lg-voter {
-    padding: 25px 80px;
-    font-size: 2.5em;
-    line-height: 1.3333333;
-    border-radius: 6px;
-}
-
-.presentation {
-    background: url('background/background04.jpg') #f69c00 no-repeat;
-    background-size: 100% 100%;
-    height: 800px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.presentation p {
-    text-align: justify
-}
-
-.projet_image {
-    position: absolute;
-    bottom: -33px;
-    right: 0;
-}
-
-/* style.css */
+/* ==============================
+style.css
+=================================*/
 
 @font-face {
     font-family: 'playtimewithhottoddiesobliqRg';
@@ -166,26 +29,26 @@ article h1 {
 }
 
 h1 {
-    font-family: "reis", Helvetica, sans-serif;
+    font-family: "reis", "Helvetica", sans-serif;
 }
 
 h2 {
     font-size: 3em;
-    font-family: "reis", Helvetica, sans-serif;
+    font-family: "reis", "Helvetica", sans-serif;
 }
 
 p {
-    font-family: 'playtimewithhottoddiesobliqRg', Helvetica, sans-serif;
+    font-family: 'playtimewithhottoddiesobliqRg', "Helvetica", sans-serif;
 }
 
 a {
-    font-family: 'playtimewithhottoddiesobliqRg', Helvetica, sans-serif;
+    font-family: 'playtimewithhottoddiesobliqRg', "Helvetica", sans-serif;
     color: white;
 }
 
 .navbar a {
     font-size: 35px;
-    font-family: "reis", Helvetica, sans-serif;
+    font-family: "reis", "Helvetica", sans-serif;
     color: black;
 }
 
@@ -302,7 +165,149 @@ footer p:nth-child(3) {
     }
 }
 
+/*
+index.css
+*/
+
+header {
+    background: url('background/background01.png') no-repeat #41a4d5;
+    background-size: 100% 100%;
+}
+
+header h1 {
+    text-align: center;
+}
+header p {
+    text-align: center;
+}
+
+header h1 {
+    font-size: 4em;
+}
+
+.header-logo:hover{
+    background-color: transparent;
+}
+
+.image_header {
+    width: 453px;
+}
+
+
+
+aside {
+    border: 5px solid white;
+    padding: 20px;
+}
+
+aside p {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    font-size: 3em;
+}
+
+aside a {
+    font-size: 3.5em;
+    text-align: center;
+    border: 3px solid white;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.date_je{
+    text-align: center !important;
+    font-size: 2.2em !important;
+}
+
+article h1 {
+    text-align: center;
+    border: 3px solid white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.flex-japan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.actualites {
+    background-color: #41a4d5;
+    color: white;
+    height: 390px;
+    padding-top: 35px;
+}
+
+.actualites p {
+    text-align: justify;
+    font-size: 1.2em;
+}
+
+.actualites p:nth-child(2) {
+    margin-top: 17px;
+}
+
+.actualites p:nth-child(3) {
+    margin-top: 17px;
+}
+
+#sous-titre {
+    text-align:center;
+}
+
+.modal-vote {
+    width: 800px;
+}
+
+.modal-planning {
+    width: 70%;
+}
+
+.planning-je {
+    width: 100%;
+}
+
+.btn-lg-planning {
+    padding: 40px 30px;
+    font-size: 2.5em;
+    line-height: 1.3333333;
+    border-radius: 6px;
+}
+
+.btn-lg-voter {
+    padding: 25px 80px;
+    font-size: 2.5em;
+    line-height: 1.3333333;
+    border-radius: 6px;
+}
+
+.presentation {
+    background: url('background/background04.jpg') #f69c00 no-repeat;
+    background-size: 100% 100%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.presentation p {
+    text-align: justify
+}
+
+.projet_image {
+    position: absolute;
+    bottom: -33px;
+    right: 0;
+}
+
 /* membres.css */
+
+.page-membres {
+    background-color: #41a4d5;
+    height: 470px;
+}
 
 #staff h1 {
     text-align: center;
@@ -314,6 +319,18 @@ footer p:nth-child(3) {
     justify-content: center;
     align-items: center;
     margin: 0 -15px;
+}
+
+#staff p {
+    margin-left: 15px;
+    font-size: 1.5em;
+    text-align: justify;
+    margin-right: 15px;
+}
+
+.membres {
+    width: 80%;
+    cursor: pointer;
 }
 
 .barre-membres{
@@ -335,24 +352,16 @@ footer p:nth-child(3) {
     align-items: center;
 }
 
+#auteurs p {
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 1.5em;
+    text-align: justify;
+}
+
 #anciens h1 {
     text-align: center;
 
-}
-
-#staff p {
-    margin-left: 45px;
-    font-size: 2em;
-}
-
-#auteurs p {
-    margin-left: 45px;
-    font-size: 2em;
-}
-
-.membres {
-    width: 80%;
-    cursor: pointer;
 }
 
 .header-bloc {
@@ -386,7 +395,10 @@ footer p:nth-child(3) {
 }
 
 .img-presentation {
-    width: 100%;
+    float: right;
+    width: 30%;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 .modal-header h2 {

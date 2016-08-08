@@ -8,29 +8,21 @@ $('#brandy').click(function(){
         '<div class="modal-body">'+
         '<div class="row">'+
         '<div>'+
+        '<img src="/assets/presentation/Brandy.png" alt="Brandy" class="img-presentation">'+
         '<p>Hey, je suis Brandy, correctrice et rédactrice pour le Kippon Dream !' +
         'C’est avant tout ma passion pour le dessin et la BD qui m’a fait pousser les portes du webzine, ' +
         ' et même si je n’y suis pas auteur, j’aime faire partie d’un collectif comme celui-là rempli de jeunes talents ' +
         ' et de fans de manga comme moi ^^ À coté de ça je dessine mes propres BD aussi bien sûr, j’ai le même rêve que les auteurs ' +
         'du KD : me faire publier un jour ! :) ' +
-        '</p>'+
+        '</p>' +
         '</div>'+
         '</div>'+
         '<div class="row">'+
         '<div class="col-md-12">'+
-        '<div class="col-md-6">'+
-        '<div class="flex">'+
-        '<p>Ses projets : </p>'+
-        '<div class="flex-pair"><img src="assets/pair.png" alt="pair" />'+
+        '<div class="flex">' +
+        '<div class="flex-pair text-center"><img src="assets/pair.png" alt="pair" />'+
         '<img src="assets/impair.png" alt="impair" />'+
         '</div>' +
-        '</div>'+
-        '<p> </p>'+
-        '<p class="liste-serie"></p>'+
-        '</div>'+
-        '<div class="col-md-6">'+
-        '<img src="/assets/presentation/Brandy.png" alt="Brandy" class="img-presentation">'+
-        '</div>'+
         '</div>'+
         '</div>'+
         '</div>');
