@@ -12,6 +12,22 @@ class PagesController < ApplicationController
     @titre = 'Magazines'
   end
 
+  def series
+    @titre = 'Séries'
+  end
+
+  def actualites
+    @titre = 'Actualités'
+  end
+
+  def contact
+    @titre = 'Contact'
+  end
+
+  def boutique
+    @titre = 'Boutique'
+  end
+
   def about
     @titre = 'À propos'
   end

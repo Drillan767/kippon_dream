@@ -1,0 +1,34 @@
+<header>
+	<nav class="navbar navbar-static-top">
+		<div class="container-fluid">
+			<ul class="nav navbar-nav">
+					<span class="barre_nav1">
+						<li> <%= link_to('MAGAZINES', '/magazines') %></li>
+						<li> <%= link_to('SERIES', '/series') %></li>
+						<li> <%= link_to('ACTUALITES', '/actu') %></li>
+					</span>
+				<li>
+					<%= link_to image_tag('KD.png',:class=> 'header-logo', alt: 'Logo menu kippon Dream'), '/', :class => 'index-lien' %>
+				</li>
+				<span class="barre_nav2">
+					<li> <%= link_to('MEMBRES', '/membres') %></li>
+					<li> <%= link_to('CONTACT', '/contact') %></li>
+					<li> <%= link_to('BOUTIQUE', '/boutique') %></li>
+					</span>
+			</ul>
+		</div>
+	</nav>
+
+	<h1 id="sous-titre">Le webzine de prépublication de bandes-dessinées</h1>
+
+	<div class="center-block image_header">
+		<a href="https://www.mangadraft.com/magazine/74-kippon-dream">
+			<%= image_tag("lecture_webzine.png", alt: "bouton lecture magazines") %>
+		</a>
+	</div>
+</header>
+
+
+<div class="text-center">
+	<%= image_tag('construction.png', width: '100%') %>
+</div>
