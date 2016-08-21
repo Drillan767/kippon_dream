@@ -3,17 +3,17 @@
     <div class="container-fluid">
       <ul class="nav navbar-nav">
 					<span class="barre_nav1">
-						<li> <a href="magazines.html">MAGAZINES</a></li>
-						<li> <a href="series.html">SERIES</a></li>
-						<li> <a href="actualites.html">ACTUALITES</a></li>
+						<li> <%= link_to('MAGAZINES', '/magazines') %></li>
+						<li> <%= link_to('SERIES', '#') %></li>
+						<li> <%= link_to('MAGAZINES', '#') %></li>
 					</span>
         <li>
-          <a href="index.html" class="index-lien"><img src="images/KD.png" alt="Logo-menu-kippon-Dream" ></a>
+          <%= link_to image_tag('KD.png',:class=> 'header-logo', alt: 'Logo menu kippon Dream'), '/', :class => 'index-lien' %>
         </li>
 					<span class="barre_nav2">
-					<li> <a href="membres.html">MEMBRES</a></li>
-					<li> <a href="contact.html">CONTACT</a></li>
-					<li> <a href="recrutement.html">BOUTIQUE/a></li>
+					<li> <%= link_to('MEMBRES', '/membres') %></li>
+					<li> <%= link_to('CONTACT', '#') %></li>
+					<li> <%= link_to('BOUTIQUE', '#') %></li>
 					</span>
       </ul>
     </div>

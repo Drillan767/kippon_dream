@@ -684,4 +684,9 @@ $('#yumi').click(function(){
  $(this).children('img').attr('src', 'assets/membres/'+result);
  });
 
-
+var lien = window.location.pathname;
+if(lien == "/magazines"){
+    $('header').css("background", "url('assets/background/magazines.jpg");
+}else if(lien == "/membres"){
+    $('header').css("background", "url('assets/background/membres.jpg");
+}

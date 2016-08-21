@@ -2,15 +2,29 @@
 <html>
   <head>
     <title><%= titre %></title>
-
+    <meta charset="utf-8">
     <%= stylesheet_link_tag 'bootstrap.min', 'application.css', media: 'all', 'data-turbolinks-track' => true %>
     <%= stylesheet_link_tag 'sd', media: 'screen and (min-width:1200px)', 'data-turbolinks-track' => true %>
     <%= stylesheet_link_tag 'hd', media: 'screen and (min-width:1600px)', 'data-turbolinks-track' => true %>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, minimum-scale=1">
+
+    <!-- SEO -->
+    <meta name="geo.region" content="FR" />
+    <meta name="description" content=" L'équipe du Kippon Dream vous présente le premier webzine de prépublication de manga ! Venez lire des séries francophones prometteuses ! | Kippon Dream">
+    <meta name="keywords" content="assocation, bande-dessinée, prépublication, kippondream, kippon dream, manga, collectif, scan, manga francais, manga amateur, magazine">
+    <meta property="og:site_name" content="Kippon Dream" />
+    <meta property="og:title" content="<%= titre %>" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="<%= request.original_url %>" />
+    <meta property="og:image" content="https://www.florent-fulleringer.fr//bundles/fulleringerfront/video/FulleringerAgency.jpg" />
+    <meta property="og:description" content="L'équipe du Kippon Dream vous présente le premier webzine de prépublication de manga ! Venez lire des séries francophones prometteuses !" >
+    <meta content="kippondream@gmail.com" name="dc.creator">
+    <meta content="2016" name="dc.date">
 
     <%= csrf_meta_tags %>
   </head>
   <body>
-
 
   <%= yield %>
 
