@@ -227,6 +227,22 @@ article h1 {
     padding-bottom: 10px;
 }
 
+.socialButs
+{
+    height:70px;
+    line-height:70px;
+}
+.socialButs .btn
+{
+    border-radius: 50px;
+    height:50px;
+    width:50px;
+    text-align: center;
+    line-height: 50px;
+    display:inline-block;
+
+}
+
 .flex-japan {
     display: flex;
     justify-content: center;
