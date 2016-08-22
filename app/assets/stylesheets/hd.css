@@ -4,6 +4,10 @@ p {
 	font-size: 1em;
 }
 
+.actualites {
+	height: 435px;
+}
+
 .actualites p {
 	font-size: 1.5em;
 }
