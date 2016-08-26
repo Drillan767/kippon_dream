@@ -4,8 +4,10 @@
     <title><%= titre %></title>
     <meta charset="utf-8">
     <%= stylesheet_link_tag 'bootstrap.min', 'application.css', media: 'all', 'data-turbolinks-track' => true %>
-    <%= stylesheet_link_tag 'sd', media: 'screen and (min-width:1200px)', 'data-turbolinks-track' => true %>
+    <%= stylesheet_link_tag 'sd', media: 'screen and (min-width:992px)', 'data-turbolinks-track' => true %>
     <%= stylesheet_link_tag 'hd', media: 'screen and (min-width:1600px)', 'data-turbolinks-track' => true %>
+    <%= stylesheet_link_tag 'tablette', media: 'screen and (min-width:768px) and (max-width:991px)', 'data-turbolinks-track' => true %>
+    <%= stylesheet_link_tag 'mobile', media: 'screen and (max-width:767px)', 'data-turbolinks-track' => true %>
     <%= stylesheet_link_tag 'fontawesome', media: 'all', 'data-turbolinks-track' => true %>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, minimum-scale=1">
@@ -20,7 +22,6 @@
     <meta property="og:type" content="website" />
     <meta property="og:image" content="http://www.kippondream.com/assets/background/background01.png" />
     <meta property="og:url" content="<%= request.original_url %>" />
-    <meta property="og:image" content="https://www.florent-fulleringer.fr//bundles/fulleringerfront/video/FulleringerAgency.jpg" />
     <meta property="og:description" content="L'équipe du Kippon Dream vous présente le premier webzine de prépublication de manga ! Venez lire des séries francophones prometteuses !" >
     <meta content="kippondream@gmail.com" name="dc.creator">
     <meta content="2016" name="dc.date">
