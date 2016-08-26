@@ -215,11 +215,6 @@ aside a {
     color: white;
 }
 
-.date_je{
-    text-align: center !important;
-    font-size: 2.2em !important;
-}
-
 article h1 {
     text-align: center;
     border: 3px solid white;
@@ -254,6 +249,11 @@ article h1 {
     color: white;
     height: 420px;
     padding-top: 35px;
+}
+
+.voter-mag-papier p {
+    text-align: center;
+    font-size: 1.2em;
 }
 
 .actualites p {
