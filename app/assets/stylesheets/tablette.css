@@ -23,4 +23,12 @@ p {
     width: 85%;
 }
 
+.voter-mag-papier p {
+    text-align: center;
+}
+
+.reseaux-sociaux {
+    margin-top: 20px;
+}
+
 /* MAGS */

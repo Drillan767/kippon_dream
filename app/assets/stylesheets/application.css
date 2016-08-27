@@ -135,10 +135,6 @@ footer p:nth-child(3) {
     padding-bottom: 20px;
 }
 
-@media (min-width: 992px) {
-
-}
-
 /*
 index.css
 */
@@ -214,7 +210,6 @@ article h1 {
 .reseaux-sociaux {
     border: 5px solid white;
     padding: 20px;
-    margin: auto;
     margin-top: 60px;
 }
 
