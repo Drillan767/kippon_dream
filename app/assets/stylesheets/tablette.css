@@ -1,12 +1,26 @@
-/* tablettes entre 768px et 991px */
+/* style */
+
+.navbar-sd {
+    display: none;
+}
 
 p {
     font-size: 1.4em;
 }
-.actualites {
-    height: 760px;
+
+/*.collapse {
+    display: none !important;
 }
+*/
+
+/* ACCUEIl */
 
 .actualites p {
     font-size: 1.4em;
 }
+
+.cadre {
+    width: 85%;
+}
+
+/* MAGS */

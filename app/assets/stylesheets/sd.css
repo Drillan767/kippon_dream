@@ -1,3 +1,35 @@
+/* style */
+
+	.navbar-sd {
+		display: block;
+	}
+
+	.navbar-sm {
+		display: none;
+	}
+
+.navbar-nav {
+	float: none;
+	margin: 0;
+	margin-top: -25px;
+}
+
+	.navbar-nav li {
+		float: none;
+	}
+
+	.index-lien {
+		padding: 0 0 15px 0 !important;
+	}
+
+	.navbar-nav li a {
+		padding: 15px 20px;
+	}
+
+	.navbar-nav > li > a {
+		padding: 15px 20px;
+	}
+
 /* ACCUEIL */
 
 	.presentation p {
@@ -12,6 +44,9 @@
 		margin-top: 10px;
 		font-size: 3.5em;
 	}
+
+
+/* ACCUEIL */
 
 /* MAGAZINE */
 

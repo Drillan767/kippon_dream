@@ -1,1 +1,7 @@
 /* strictement inférieur à 768px */
+
+/* style */
+
+.navbar-sd {
+    display: none;
+}
