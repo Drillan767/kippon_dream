@@ -160,7 +160,7 @@ header h1 {
 }
 
 .image_header {
-    width: 453px;
+    width: 100%;
 }
 
 aside a {
@@ -207,8 +207,8 @@ article h1 {
 }
 
 .voter-mag-papier p {
-    text-align: center;
-    font-size: 1.2em;
+    text-align: center !important;
+    font-size: 1.2em !important;
 }
 
 .actualites p {
@@ -319,6 +319,10 @@ article h1 {
     margin-right: 15px;
     font-size: 1.5em;
     text-align: justify;
+}
+
+.grosse-image {
+    width:20%;
 }
 
 #anciens h1 {

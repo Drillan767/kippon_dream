@@ -5,3 +5,84 @@
 .navbar-sd {
     display: none;
 }
+
+/* ACCUEIL */
+
+header {
+    padding-top: 50px;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+.image_header img {
+    width: 80%;
+}
+
+.actualites p {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.voter-mag-papier p {
+    margin-left: 0 !important;
+}
+
+.reseaux-sociaux {
+    margin-top: 0px;
+}
+
+.cadre {
+    width: 90%;
+}
+
+.presentation {
+    height: 985px;
+}
+
+.presentation h1, h2 {
+    font-size: 30px;
+}
+
+.presentation p {
+    font-size: 1.1em;
+}
+
+footer p {
+    font-size: 1.5em;
+}
+
+.bouton_contact {
+    font-size: 2em;
+}
+
+@media screen and (max-width: 400px) {
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    .actualites h1 {
+        margin-left: 25.3%;
+        width: 53.3%;
+    }
+
+    .voter-mag-papier p {
+        margin-left: 0 !important;
+    }
+
+    .btn-lg-voter {
+        font-size: 2em;
+    }
+
+    .presentation {
+        height: 1500px;
+        background: none;
+        background-color: #f69c00
+    }
+
+    .presentation h1,h2 {
+        font-size: 1.5em;
+    }
+}

@@ -56,3 +56,9 @@ p {
 .magazines {
     height: 8610px;
 }
+
+/* MEMBRES */
+
+.modal-membres {
+    width: 85%;
+}
