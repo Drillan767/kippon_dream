@@ -135,36 +135,6 @@ footer p:nth-child(3) {
     padding-bottom: 20px;
 }
 
-.cadre {
-    width: 70%;
-    background-color: #FFFFFF;
-    border: 2px solid black;
-}
-
-@media (min-width: 768px) {
-    .navbar-nav {
-        float: none;
-        margin: 0;
-        margin-top: -25px;
-    }
-
-    .navbar-nav li {
-        float: none;
-    }
-
-    .index-lien {
-        padding: 0 0 15px 0 !important;
-    }
-
-    .navbar-nav li a {
-        padding: 15px 20px;
-    }
-
-    .navbar-nav > li > a {
-        padding: 15px 20px;
-    }
-}
-
 /*
 index.css
 */
@@ -190,21 +160,7 @@ header h1 {
 }
 
 .image_header {
-    width: 453px;
-}
-
-
-
-aside {
-    border: 5px solid white;
-    padding: 20px;
-}
-
-aside p {
     width: 100%;
-    margin: auto;
-    text-align: center;
-    font-size: 3em;
 }
 
 aside a {
@@ -239,21 +195,20 @@ article h1 {
 }
 
 .reseaux-sociaux {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    border: 5px solid white;
+    padding: 20px;
+    margin-top: 60px;
 }
 
 .actualites {
     background-color: #41a4d5;
     color: white;
-    height: 420px;
     padding-top: 35px;
 }
 
 .voter-mag-papier p {
-    text-align: center;
-    font-size: 1.2em;
+    text-align: center !important;
+    font-size: 1.2em !important;
 }
 
 .actualites p {
@@ -277,23 +232,8 @@ article h1 {
     width: 800px;
 }
 
-.modal-planning {
-    width: 70%;
-}
-
-.planning-je {
-    width: 100%;
-}
-
-.btn-lg-planning {
-    padding: 40px 30px;
-    font-size: 2.5em;
-    line-height: 1.3333333;
-    border-radius: 6px;
-}
-
 .btn-lg-voter {
-    padding: 25px 80px;
+    padding: 25px 55px;
     font-size: 2.5em;
     line-height: 1.3333333;
     border-radius: 6px;
@@ -302,20 +242,26 @@ article h1 {
 .presentation {
     background: url('background/background04.jpg') #f69c00 no-repeat;
     background-size: 100% 100%;
-    height: 800px;
+    height: 880px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .presentation p {
-    text-align: justify
+    text-align: justify;
 }
 
 .projet_image {
     position: absolute;
     bottom: -33px;
     right: 0;
+}
+
+.cadre {
+    width: 70%;
+    background-color: #FFFFFF;
+    border: 2px solid black;
 }
 
 /* membres.css */
@@ -373,6 +319,10 @@ article h1 {
     margin-right: 15px;
     font-size: 1.5em;
     text-align: justify;
+}
+
+.grosse-image {
+    width:20%;
 }
 
 #anciens h1 {
@@ -445,14 +395,10 @@ article h1 {
 }
 
 .derniere_sortie div {
-    height: 540px;
 }
 
 .dernier_numero {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
 }
 
 .dernier_numero h1 {
@@ -514,4 +460,42 @@ article h1 {
 .numero-margin {
     margin-bottom: 90px;
     margin-top: -60px;
+}
+
+/* MENU NON COLLAPSÉ JUSQU'A CE QUE L'ÉCRAN FASSE 1000PX DE LARGE */
+@media (max-width: 1000px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display:block !important;
+    }
 }

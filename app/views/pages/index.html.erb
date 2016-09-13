@@ -1,5 +1,6 @@
 <header>
-  <nav class="navbar navbar-static-top">
+  <!-- NAV ORDI -->
+  <nav class="navbar navbar-static-top navbar-sd">
     <div class="container-fluid">
       <ul class="nav navbar-nav">
 					<span class="barre_nav1">
@@ -19,24 +20,32 @@
     </div>
   </nav>
 
-  <!-- <!-- <nav class="">
-    <div>
-      <ul>
-        <li><%= link_to('MAGAZINES', '/magazines') %></li>
-        <li><%= link_to('SERIES', '/series') %></li>
-        <li><%= link_to('ACTUALITES', '/actu') %></li>
-        <li><%= link_to image_tag('KD.png',:class=> 'header-logo', alt: 'Logo menu kippon Dream'), '/', :class => 'index-lien' %></li>
-        <li><%= link_to('MEMBRES', '/membres') %></li>
-        <li><%= link_to('CONTACT', '/contact') %></li>
-        <li><li> <%= link_to('BOUTIQUE', '/boutique') %></li></li>
-      </ul>
+  <!-- NAV TABLETTE MOBILE -->
+  <nav class="navbar navbar-inverse navbar-fixed-top navbar-sm">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="" class="navbar-brand">Kippon Dream</a> <!-- rediriger vers l'accueil -->
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li> <%= link_to('MAGAZINES', '/magazines') %></li>
+          <li> <%= link_to('SERIES', '/series') %></li>
+          <li> <%= link_to('ACTUALITES', '/actu') %></li>
+          <li> <%= link_to('MEMBRES', '/membres') %></li>
+          <li> <%= link_to('CONTACT', '/contact') %></li>
+          <li> <%= link_to('BOUTIQUE', '/boutique') %></li>
+        </ul>
+      </div>
     </div>
   </nav>
-  -->
 
   <h1 id="sous-titre">Le webzine de prépublication de bandes-dessinées</h1>
 
-  <div class="center-block image_header">
+  <div class="center-block text-center image_header">
     <a href="https://www.mangadraft.com/magazine/74-kippon-dream">
       <%= image_tag("lecture_webzine.png", alt: "bouton lecture magazines") %>
     </a>
@@ -46,11 +55,10 @@
 <section class="actualites">
   <div class="row">
     <article>
-      <div class="col-md-offset-1 col-md-3 col-sm-12 voter-mag-papier">
-
-        <h1>Actualités</h1>
-        <p>Nous avons besoin de vous !</p>
-        <p>Répondez à ce sondage pour élire vos séries préférés (du numéro papier)</p>
+      <div class="col-md-offset-1 col-md-4 col-sm-12 voter-mag-papier">
+        <h1 class="col-xs-offset-4 col-xs-4 col-md-offset-0 col-md-12 col-sm-offset-4 col-sm-4">Actualités</h1>
+        <p class="col-xs-12 col-sm-12">Nous avons besoin de vous !</p>
+        <p class="col-xs-12 col-sm-12">Répondez à ce sondage pour élire vos séries préférés (du numéro papier)</p>
         <button type="button" class="btn btn-primary btn-lg-voter center-block" data-toggle="modal" data-target="#myModal">
           Voter ici
         </button>
@@ -73,29 +81,27 @@
         </div>
       </div>
 
-      <p class="col-md-2 col-sm-6">Bienvenue sur le premier site internet du Kippon Dream ! Découvrez sur
+      <p class="col-md-offset-0 col-md-3 col-sm-offset-1 col-sm-5">Bienvenue sur le premier site internet du Kippon Dream ! Découvrez sur
         ce site toutes nos séries, magazines, mais aussi nos membres et l'actualité de notre association.
         Le site a été entièrement réalisé par Twildette et Kuro et est encore en construction,
         nous espérons toutefois que vous apprécierez la visite, n'hésitez pas à nous donner des retours ! </p>
 
-      <p class="col-md-2 col-sm-6">La Japan expo est arrivée... Découvrez le planning de nos auteurs
+      <p class="col-md-3 col-sm-5">La Japan expo est arrivée... Découvrez le planning de nos auteurs
         et passez nous voir si le coeur vous en dit ! Vous trouverez sur notre stand notre
         tout premier magazine papier ainsi que divers goodies proposés par les auteurs. Nos membres
         ne mordent pas promis, ils apprécieront votre visite :D Sur ce, mata ne !</p>
     </article>
 
-    <div class="reseaux-sociaux col-md-3 col-offset-sm-1 col-sm-10">
-      <aside>
-        <div>
-          <p>Retrouvez-nous sur les réseaux sociaux pour avoir les dernières nouvelles, illustrations.. Promis on est pas méchants !</p>
-          <div class="socialButs text-center">
-            <a class="btn btn-primary" href="https://www.facebook.com/KipponDream/"><span class="fa fa-facebook fa-2x" aria-hidden="true"></span></a>
-            <a class="btn btn-primary" href="https://twitter.com/KipponDream"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
-          </div>
-        </div>
-      </aside>
+    <div class="row">
+    <div class="reseaux-sociaux col-xs-offset-1 col-xs-10 col-md-offset-1 col-md-10 col-sm-offset-1 col-sm-10">
+      <p>Retrouvez-nous sur les réseaux sociaux pour avoir les dernières nouvelles, illustrations.. Promis on est pas méchants !</p>
+      <div class="socialButs text-center">
+        <a class="btn btn-primary" href="https://www.facebook.com/KipponDream/"><span class="fa fa-facebook fa-2x" aria-hidden="true"></span></a>
+        <a class="btn btn-primary" href="https://twitter.com/KipponDream"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+      </div>
     </div>
-  </div>
+    </div>
+  </div> <!-- row -->
 </section>
 
 <section class="presentation">
@@ -130,7 +136,7 @@
           </div>
         </div>
         <div class="col-md-4 projet_image">
-          <%= image_tag('personnage_pain.png', alt: 'Païn')%>
+          <%= image_tag('personnage_pain.png', alt: 'Païn', class:'hidden-sm hidden-xs')%>
         </div>
 
       </div>

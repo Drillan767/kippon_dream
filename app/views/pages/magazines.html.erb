@@ -1,5 +1,6 @@
 <header>
-  <nav class="navbar navbar-static-top">
+  <!-- NAV ORDI -->
+  <nav class="navbar navbar-static-top navbar-sd">
     <div class="container-fluid">
       <ul class="nav navbar-nav">
 					<span class="barre_nav1">
@@ -16,6 +17,29 @@
 					<li> <%= link_to('BOUTIQUE', '/boutique') %></li>
 					</span>
       </ul>
+    </div>
+  </nav>
+
+  <!-- NAV TABLETTE MOBILE -->
+  <nav class="navbar navbar-inverse navbar-fixed-top navbar-sm">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="" class="navbar-brand">Kippon Dream</a> <!-- rediriger vers l'accueil -->
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li> <%= link_to('MAGAZINES', '/magazines') %></li>
+        <li> <%= link_to('SERIES', '/series') %></li>
+        <li> <%= link_to('ACTUALITES', '/actu') %></li>
+        <li> <%= link_to('MEMBRES', '/membres') %></li>
+        <li> <%= link_to('CONTACT', '/contact') %></li>
+        <li> <%= link_to('BOUTIQUE', '/boutique') %></li>
+      </ul>
+    </div>
     </div>
   </nav>
 
@@ -36,15 +60,17 @@
 
 <section class="derniere_sortie">
   <div class="row">
-    <div class="col-md-4">
+    <div class="col-sm-offset-4 col-sm-4 col-md-offset-0 col-md-4">
       <div class="dernier_numero">
         <h1>Dernière sortie</h1>
         <p>Numéro #15</p>
-        <a href="https://www.mangadraft.com/lecture/74-kippon-dream/2420-numero-15-30-mai-2016">Lire sur Mangadraft</a>
+        <div class="mangadraft">
+          <%= link_to image_tag('btl_lecture_mangadraft.png'), 'https://www.mangadraft.com/lecture/74-kippon-dream/2856-numero-16-30-aout' %>
+        </div>
       </div>
     </div>
 
-    <div class=" col-md-4">
+    <div class="col-sm-6 col-md-4">
       <div class="description_numero">
         <p >Dans ce dernier numéro du Kippon Dream, retrouvez les séries Païn et infinite revenge.</p>
         <p>Vous découvrirez:</p>
@@ -55,7 +81,7 @@
       </div>
     </div>
 
-    <div class="col-md-4">
+    <div class="col-sm-5 col-md-4">
       <%= image_tag('magazines/couv_mag15', alt:'couverture Kippon Dream 15', :class => 'center-block')%>
     </div>
   </div>
@@ -72,8 +98,8 @@
     ------------------------------------------>
 
     <div class="row">
-      <div class="col-md-12 numero-div">
-        <div class="col-md-4">
+      <div class="col-sm-12 col-md-12 numero-div">
+        <div class="col-sm-4 col-md-4">
           <div class="image-couv">
             <%= image_tag('magazines/mag_001.png', alt:'Dream Cup Hors Série')%>
           </div>
@@ -81,15 +107,17 @@
 
 
         <div class="col-md-offset-1 col-md-7">
-          <div class="flex-magazine">
+          <div class="flex-magazine col-sm-8">
             <h2>Hors-série : Dream Cup #1 </h2>
             <p class="date-sortie"> - sorti le 28 août 2015</p>
           </div>
 
-          <div class="mangadraft">
+          <div class="mangadraft col-sm-8">
             <%= link_to image_tag('btl_lecture_mangadraft.png'), 'https://www.mangadraft.com/lecture/74-kippon-dream/1200-numero-hors-serie-dream-cup-1-28-aout-2015'%>
           </div>
-              <p>Pour le premier numéro hors-série du webzine, découvrez le concours de la Dream Cup ! Vous pourrez voter parmi 5 one-shot réalisés par des auteurs qui ne sont pas du Kippon Dream !</p>
+          <div class="sommaire-numero col-sm-12">
+              <p>Pour le premier numéro hors-série du webzine, découvrez le concours de la Dream Cup !
+                Vous pourrez voter parmi 5 one-shot réalisés par des auteurs qui ne sont pas du Kippon Dream !</p>
 
           <p>Au sommaire : <br />
             -Âmes jumelles <br />
@@ -97,6 +125,7 @@
             -Vengeance sans nom <br />
             -Mergeo <br />
             -3 coups avant l'aube </p>
+          </div> <!-- sommaire numéro -->
         </div> <!-- col md 8 -->
       </div> <!-- col md 12 -->
     </div> <!-- row -->
@@ -106,8 +135,8 @@
     ------------------------------------------>
 
     <div class="row">
-      <div class="col-md-12 numero-div">
-        <div class="col-md-4">
+      <div class="col-sm-12 col-md-12 numero-div">
+        <div class="col-sm-4 col-md-4">
           <div class="image-couv">
             <%= image_tag('magazines/mag_01.png', alt:'Dream Cup 01')%>
           </div>
@@ -115,15 +144,15 @@
 
 
         <div class="col-md-offset-1 col-md-7">
-          <div class="flex-magazine">
+          <div class="flex-magazine col-sm-8">
             <h2>Numéro #1 </h2>
             <p class="date-sortie"> - sorti le 27 juin 2014</p>
           </div>
 
-          <div class="mangadraft">
+          <div class="mangadraft col-sm-8">
             <%= link_to image_tag('btl_lecture_mangadraft.png'), 'https://www.mangadraft.com/lecture/74-kippon-dream/116-numero-1-reedition-27-juin-2014' %>
           </div>
-
+          <div class="sommaire-numero col-sm-12">
           <p>Réédition du numéro 1 le 27 juin 2014 par Iyoku.</p>
           <p>Premier numéro du Kippon Dream avec le début des séries : <br />
             - Païn <br />
@@ -134,6 +163,7 @@
 
           <p> Retrouvez aussi le one-shot Nai Mori </p>
           <p> Bonne lecture </p>
+          </div>
         </div> <!-- col md 8 -->
       </div> <!-- col md 12 -->
     </div> <!-- row -->
@@ -143,8 +173,8 @@
     ------------------------------------------>
 
     <div class="row">
-      <div class="col-md-12 numero-div">
-        <div class=" col-md-4">
+      <div class="col-sm-12 col-md-12 numero-div">
+        <div class="col-sm-4 col-md-4">
           <div class="image-couv">
             <%= image_tag('magazines/mag_02.png', alt:'Dream Cup 02')%>
           </div>
@@ -152,24 +182,25 @@
 
 
         <div class="col-md-offset-1 col-md-7">
-          <div class="flex-magazine">
+          <div class="flex-magazine col-sm-8">
             <h2>Numéro #2 </h2>
             <p class="date-sortie"> - sorti en mars 2014</p>
           </div>
 
-          <div class="mangadraft">
+          <div class="mangadraft col-sm-8">
             <%= link_to image_tag('btl_lecture_mangadraft.png'), 'https://www.mangadraft.com/lecture/74-kippon-dream/100-numero-2-mars-2014' %>
           </div>
-
-          <p>Pour ce deuxième numéro, retrouvez les séries: <br />
-            - Animix <br />
-            - Païn <br />
-            - Spirits Age <br />
-            -No-Life Makoto <br />
-            - Marianne <br />
-            - Et une série qui fait ses débuts: Dungeons ! </p>
-          <p>A partir de ce deuxième numéro, la mise en page et le graphisme du webzine ont été gérés par Iyoku, notre ancienne graphiste, pour le plaisir de vos yeux !</p>
-          <p>Bonne lecture !</p>
+          <div class="sommaire-numero col-sm-12">
+            <p>Pour ce deuxième numéro, retrouvez les séries: <br />
+              - Animix <br />
+              - Païn <br />
+              - Spirits Age <br />
+              -No-Life Makoto <br />
+              - Marianne <br />
+              - Et une série qui fait ses débuts: Dungeons ! </p>
+            <p>A partir de ce deuxième numéro, la mise en page et le graphisme du webzine ont été gérés par Iyoku, notre ancienne graphiste, pour le plaisir de vos yeux !</p>
+            <p>Bonne lecture !</p>
+          </div>
         </div> <!-- col md 8 -->
       </div> <!-- col md 12 -->
     </div> <!-- row -->
@@ -179,8 +210,8 @@
    ---------------------------->
 
     <div class="row">
-      <div class="col-md-12 col-sm-12 numero-div">
-        <div class="col-md-4">
+      <div class="col-sm-12 col-md-12 numero-div">
+        <div class="col-sm-4 col-md-4">
           <div class="image-couv">
             <%= image_tag('magazines/mag_03.png', alt:'Dream Cup 03')%>
           </div>
@@ -188,23 +219,24 @@
 
 
         <div class="col-md-offset-1 col-md-7">
-          <div class="flex-magazine">
+          <div class="flex-magazine col-sm-8">
             <h2>Numéro #3 </h2>
             <p class="date-sortie"> - sorti le 15 juin 2014</p>
           </div>
 
-          <div class="mangadraft">
+          <div class="mangadraft col-sm-8">
             <%= link_to image_tag('btl_lecture_mangadraft.png'), 'https://www.mangadraft.com/lecture/74-kippon-dream/101-numero-3-15-juin-2014' %>
           </div>
-
-          <p>Et voici le troisième numéro du Kippon Dream !</p>
-          <p>Retrouvez les séries: <br />
-            - Dungeons <br />
-            - Païn <br />
-            - Animix <br />
-            - Et Chronique des skulls, notre petite dernière.
-          <p>A partir de ce numéro, deux nouveaux membres nous ont rejoint: Brandy et Theresem, respectivement correctrice et illustratrice.</p>
-          <p>Bonne lecture !</p>
+          <div class="sommaire-numero col-sm-12">
+            <p>Et voici le troisième numéro du Kippon Dream !</p>
+            <p>Retrouvez les séries: <br />
+              - Dungeons <br />
+              - Païn <br />
+              - Animix <br />
+              - Et Chronique des skulls, notre petite dernière.
+            <p>A partir de ce numéro, deux nouveaux membres nous ont rejoint: Brandy et Theresem, respectivement correctrice et illustratrice.</p>
+            <p>Bonne lecture !</p>
+          </div>
         </div> <!-- col md 8 -->
       </div> <!-- col md 12 -->
     </div> <!-- row -->
@@ -214,8 +246,8 @@
     ----------------------------->
 
     <div class="row">
-      <div class="col-md-12 numero-div">
-        <div class="col-md-4">
+      <div class="col-sm-12 col-md-12 numero-div">
+        <div class="col-sm-4 col-md-4">
           <div class="image-couv">
             <%= image_tag('magazines/mag_04.png', alt:'Dream Cup 04')%>
           </div>
@@ -223,24 +255,24 @@
 
 
         <div class="col-md-offset-1 col-md-7">
-          <div class="flex-magazine">
+          <div class="flex-magazine col-sm-8">
             <h2>Numéro #4 </h2>
             <p class="date-sortie"> - sorti le 31 juillet 2014</p>
           </div>
 
-          <div class="mangadraft">
+          <div class="mangadraft col-sm-8">
             <%= link_to image_tag('btl_lecture_mangadraft.png'), 'https://www.mangadraft.com/lecture/74-kippon-dream/133-numero-4-31-juillet-2014' %>
           </div>
-
-          <p>Pour ce quatrième numéro, découvrez la suite des séries: <br />
-            - Marianne <br />
-            - No-Life Makoto</p>
-          <p>Ainsi que des nouvelles histoires : <br />
-            - SkillNaden <br />
-            - Eva <br />
-            - Axel's World</p>
-
-          <p>Bonne lecture !</p>
+          <div class="sommaire-numero col-sm-12">
+            <p>Pour ce quatrième numéro, découvrez la suite des séries: <br />
+              - Marianne <br />
+              - No-Life Makoto</p>
+            <p>Ainsi que des nouvelles histoires : <br />
+              - SkillNaden <br />
+              - Eva <br />
+              - Axel's World</p>
+            <p>Bonne lecture !</p>
+          </div>
         </div> <!-- col md 8 -->
       </div> <!-- col md 12 -->
     </div> <!-- row -->
@@ -250,8 +282,8 @@
    ----------------------------------->
 
     <div class="row">
-      <div class="col-md-12 numero-div">
-        <div class="col-md-4">
+      <div class="col-sm-12 col-md-12 numero-div">
+        <div class="col-sm-4 col-md-4">
           <div class="image-couv">
             <%= image_tag('magazines/mag_05.png', alt:'Dream Cup 05')%>
           </div>
@@ -259,22 +291,23 @@
 
 
         <div class="col-md-offset-1 col-md-7">
-          <div class="flex-magazine">
+          <div class="flex-magazine col-sm-8">
             <h2>Numéro #5 </h2>
             <p class="date-sortie"> - sorti le 15 septembre 2014</p>
           </div>
 
-          <div class="mangadraft">
+          <div class="mangadraft col-sm-8">
             <%= link_to image_tag('btl_lecture_mangadraft.png'), 'https://www.mangadraft.com/lecture/74-kippon-dream/179-numero-5-15-septembre-2014' %>
           </div>
-
-          <p>Dans ce conquième numéro, venez découvrir la suite des séries: <br />
-            - Chronique des skulls <br />
-            - Païn <br />
-            - Animix <br />
-            - Dungeons <br />
-            - Marianne <br />
-          <p>Bonne lecture !</p>
+          <div class="sommaire-numero col-sm-12">
+            <p>Dans ce conquième numéro, venez découvrir la suite des séries: <br />
+              - Chronique des skulls <br />
+              - Païn <br />
+              - Animix <br />
+              - Dungeons <br />
+              - Marianne <br />
+            <p>Bonne lecture !</p>
+          </div>
         </div> <!-- col md 8 -->
       </div> <!-- col md 12 -->
     </div> <!-- row -->
@@ -284,49 +317,46 @@
     ------------------------------------->
 
     <div class="row">
-      <div class="col-md-12 numero-div">
-        <div class="col-md-4">
+      <div class="col-sm-12 col-md-12 numero-div">
+        <div class=" col-sm-4 col-md-4">
           <div class="image-couv">
             <%= image_tag('magazines/mag_06.png', alt:'Dream Cup 06')%>
           </div>
         </div>
 
         <div class="col-md-offset-1 col-md-7">
-          <div class="row">
             <div class="col-md-12">
-              <div class="flex-magazine">
+              <div class="flex-magazine col-sm-8">
                 <h2>Numéro #6 </h2>
                 <p class="date-sortie"> - sorti le 31 octobre 2014</p>
               </div>
             </div>
-          </div>
-          <div class="row">
             <div class="mangadraft">
               <%= link_to image_tag('btl_lecture_mangadraft.png'), 'https://www.mangadraft.com/lecture/74-kippon-dream/271-numero-6-31-octobre-2014' %>
               <%= image_tag('pair', alt: 'pair')%>
             </div>
-          </div>
 
-          <div class="row">
-            <div class="col-md-12">
+          <div class="col-sm-12">
+            <div class="col-sm-12 col-md-12">
               <p>Retrouvez votre webzine de prépublication de bandes dessinées dans ce xisième numéro!</p>
-              <div class="col-md-6">
+              <div class="col-sm-6 col-md-6">
                 <p>Découvrez la suite de : <br />
                   - No-Life Makoto <br />
                   - Animix <br />
                   - Marianne <br />
                   - Marianne </p>
               </div>
-              <div class="col-md-6">
+              <div class=" col-sm-6 col-md-6">
                 <p>Ainsi que les nouvelles histoires : <br />
                   - Feel So Foreign <br />
                   -L'inconnu de ses nuits <br />
                   - Sauvetage !</p>
               </div>
-            </div> <!-- row -->
+            </div>
+          </div>
 
             <div class="row">
-              <div class="col-md-12">
+              <div class="col-sm-12 col-md-12">
                 <p>A partir de ce numéro nous accueillons une nouvelle graphiste, Twildette, qui s'occupe désormais de tous les numéros !</p>
               </div>
             </div>
@@ -340,16 +370,15 @@
       -------------------------------------->
 
       <div class="row">
-        <div class="col-md-12 numero-div">
-          <div class="col-md-4">
+        <div class="col-sm-12 col-md-12 numero-div">
+          <div class="col-sm-4 col-md-4">
             <div class="image-couv">
               <%= image_tag('magazines/mag_07.png', alt:'Dream Cup 07')%>
             </div>
           </div>
 
-
           <div class="col-md-offset-1 col-md-7">
-            <div class="flex-magazine">
+            <div class="flex-magazine col-sm-8">
               <h2>Numéro #7 </h2>
               <p class="date-sortie"> - sorti le 20 décembre 2014</p>
             </div>
@@ -359,10 +388,9 @@
               <%= image_tag('impair.png', alt: 'impair')%>
             </div>
 
-            <div class="row">
-              <div class="col-md-12">
+              <div class="col-sm-12 col-md-12">
                 <p>Voici le septième numéro du Kippon Dream spécial fêtes !</p>
-                <div class="col-md-6">
+                <div class="col-sm-6 col-md-6">
                   <p> Vous y trouverez la suite de <br />
                     - Païn <br />
                     - Feel so Foreign <br />
@@ -370,12 +398,12 @@
                     -No-Life Makoto <br />
                     - Marianne </p>
                 </div>
-                <div class="col-md-6">
+                <div class="col-sm-6 col-md-6">
                   <p>C'est aussi le début des séries <br />
                     - Dawn of the Sorain <br />
                     - Infinite Revenge </p>
                 </div>
-              </div> <!-- row -->
+              </div>
 
               <p>Bonne lecture ! </p>
             </div> <!-- col md 8 -->
@@ -387,8 +415,8 @@
         ------------------------------------>
 
         <div class="row">
-          <div class="col-md-12 numero-div">
-            <div class="col-md-4">
+          <div class="col-sm-12 col-md-12 numero-div">
+            <div class="col-sm-4 col-md-4">
               <div class="image-couv">
                 <%= image_tag('magazines/mag_08.png', alt:'Dream Cup 08')%>
               </div>
@@ -396,7 +424,7 @@
 
 
             <div class="col-md-offset-1 col-md-7">
-              <div class="flex-magazine">
+              <div class="flex-magazine col-sm-8">
                 <h2>Numéro #8 </h2>
                 <p class="date-sortie"> - sorti le 14 février 2015</p>
               </div>
@@ -408,23 +436,21 @@
 
               <p>Voici le tout beau tout frais Kippon Dream numéro 8 spécial Saint-Valentin !</p>
 
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="col-md-6">
+                <div class="col-sm-12 col-md-12">
+                  <div class="col-sm-6 col-md-6">
                     <p>Découvrez la suite de : <br />
                       - Animix <br />
                       - Dungeons <br />
                       - No-Life Makoto <br />
                       - Marianne </p>
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-sm-6 col-md-6">
                     <p>Ainsi que le lancement de <br />
                       - Vampire Magnetism <br />
                       - Blood Sorcerers <br />
                       - Dragon(s)</p>
                   </div>
                 </div>
-              </div> <!-- row -->
             </div> <!-- col md 7 -->
           </div> <!-- col md 12 -->
         </div> <!-- row -->
@@ -434,8 +460,8 @@
         ---------------------------------------->
 
         <div class="row">
-          <div class="col-md-12 numero-div">
-            <div class="col-md-4">
+          <div class="col-sm-12 col-md-12 numero-div">
+            <div class="col-sm-4 col-md-4">
               <div class="image-couv">
                 <%= image_tag('magazines/mag_09.png', alt:'Dream Cup 09')%>
               </div>
@@ -443,7 +469,7 @@
 
 
             <div class="col-md-offset-1 col-md-7">
-              <div class="flex-magazine">
+              <div class="flex-magazine col-sm-8">
                 <h2>Numéro #9 </h2>
                 <p class="date-sortie"> - sorti le 31 mars 2015</p>
               </div>
@@ -453,16 +479,19 @@
                 <%= image_tag('impair.png', alt: 'impair')%>
               </div>
 
-              <p>Voici le neuxième numéro du Kippon Dream</p>
-              <p>Retrouvez vos séries <br />
-                - Marianne <br />
-                - Infinite Revenge <br />
-                - Païn <br />
-                - Dawn of the Sorain <br />
-                - Chronique des Skulls </p>
-              <p>Et découvrez notre nouveau manga <br />
-                - Ryû: le dernier dragon ! <br />
-            </div> <!-- col md 8 -->
+              <div class="col-sm-12">
+                <p>Voici le neuxième numéro du Kippon Dream</p>
+                <p>Retrouvez vos séries <br />
+                  - Marianne <br />
+                  - Infinite Revenge <br />
+                  - Païn <br />
+                  - Dawn of the Sorain <br />
+                  - Chronique des Skulls </p>
+                <p>Et découvrez notre nouveau manga <br />
+                  - Ryû: le dernier dragon ! <br />
+              </div>
+
+                </div> <!-- col md 8 -->
           </div> <!-- col md 12 -->
         </div> <!-- row -->
 
@@ -472,8 +501,8 @@
 
 
         <div class="row">
-          <div class="col-md-12 numero-div">
-            <div class="col-md-4">
+          <div class="col-sm-12 col-md-12 numero-div">
+            <div class="col-sm-4 col-md-4">
               <div class="image-couv">
                 <%= image_tag('magazines/mag_10.png', alt:'Dream Cup 10')%>
               </div>
@@ -481,7 +510,7 @@
 
 
             <div class="col-md-offset-1 col-md-7">
-              <div class="flex-magazine">
+              <div class="flex-magazine col-sm-8">
                 <h2>Numéro #10 </h2>
                 <p class="date-sortie"> - sorti le 23 juin 2015</p>
               </div>
@@ -491,11 +520,13 @@
                 <%= image_tag('pair', alt: 'pair')%>
               </div>
 
-              <p>Pour ce dixième numéro du Kippon Dream découvrez la suite de <br />
-                - Dragon(s) <br />
-                - Blood Sorcerer </p>
-              <p>Ainsi que le début de <br />
-                - Demon Spider ! </p>
+              <div class="col-sm-12">
+                <p>Pour ce dixième numéro du Kippon Dream découvrez la suite de <br />
+                  - Dragon(s) <br />
+                  - Blood Sorcerer </p>
+                <p>Ainsi que le début de <br />
+                  - Demon Spider ! </p>
+              </div>
             </div> <!-- col md 8 -->
           </div> <!-- col md 12 -->
         </div> <!-- row -->
@@ -505,8 +536,8 @@
         ----------------------------------------->
 
         <div class="row">
-          <div class="col-md-12 numero-div">
-            <div class="col-md-4">
+          <div class="col-sm-12 col-md-12 numero-div">
+            <div class="col-sm-4 col-md-4">
               <div class="image-couv">
                 <%= image_tag('magazines/mag_11.png', alt:'Dream Cup 11')%>
               </div>
@@ -514,7 +545,7 @@
 
 
             <div class="col-md-offset-1 col-md-7">
-              <div class="flex-magazine">
+              <div class="flex-magazine col-sm-8">
                 <h2>Numéro #11 </h2>
                 <p class="date-sortie"> - sorti le 20 juillet 2015 </p>
               </div>
@@ -523,14 +554,15 @@
                 <%= link_to image_tag('btl_lecture_mangadraft.png'), 'https://www.mangadraft.com/lecture/74-kippon-dream/890-numero-11-20-juillet-2015' %>
                 <%= image_tag('impair.png', alt: 'impair')%>
               </div>
-
-              <p>Les choses sérieuses commencent pour Dawn of the Sorain dans ce onzième numéro !</p>
-              <p>Découvrez aussi la suite de <br />
-                - Païn<br />
-                - Infinite Revenge <br />
-                - Païn </p>
-              <p>Ainsi qu'un nouveau light-novel <br />
-                - Angel's Fall !</p>
+              <div class="col-sm-12">
+                <p>Les choses sérieuses commencent pour Dawn of the Sorain dans ce onzième numéro !</p>
+                <p>Découvrez aussi la suite de <br />
+                  - Païn<br />
+                  - Infinite Revenge <br />
+                  - Païn </p>
+                <p>Ainsi qu'un nouveau light-novel <br />
+                  - Angel's Fall !</p>
+              </div>
             </div> <!-- col md 8 -->
           </div> <!-- col md 12 -->
         </div> <!-- row -->
@@ -540,8 +572,8 @@
         ----------------------------------->
 
         <div class="row">
-          <div class="col-md-12 numero-div">
-            <div class="col-md-4">
+          <div class="col-sm-12 col-md-12 numero-div">
+            <div class="col-sm-4 col-md-4">
               <div class="image-couv">
                 <%= image_tag('magazines/mag_12.png', alt:'Dream Cup 12')%>
               </div>
@@ -549,7 +581,7 @@
 
 
             <div class="col-md-offset-1 col-md-7">
-              <div class="flex-magazine">
+              <div class="flex-magazine col-sm-8">
                 <h2>Numéro #12 </h2>
                 <p class="date-sortie"> - sorti le 15 juillet 2016 </p>
               </div>
@@ -561,25 +593,23 @@
 
               <p>Voici le douzième numéro du Kippon Dream !</p>
 
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="col-md-6">
+                <div class="col-sm-12 col-md-12">
+                  <div class="col-sm-6 col-md-6">
                     <p>Découvrez dans ce premier numéro de la saison 2 une nouvelle série : <br />
                       - Demon Spider</p>
 
                     <p> Ainsi que le one shot : <br />
                       - Symphony of Angels </p>
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-sm-6 col-md-6">
                     <p>Accompagnés de 3 de vos séries habituelles <br />
                       - Animix <br />
                       - Blood Sorcerer <br />
                       - Dragon(s)</p>
                   </div>
                 </div>
-              </div>
 
-              <p>Toute l'équipe vous souhaite une très bonne lecture et surtout une joyeuse année pleine de réussite !</p>
+              <p class="col-sm-12">Toute l'équipe vous souhaite une très bonne lecture et surtout une joyeuse année pleine de réussite !</p>
 
             </div> <!-- col md 8 -->
           </div> <!-- col md 12 -->
@@ -590,15 +620,15 @@
         ---------------------------------------->
 
         <div class="row">
-          <div class="col-md-12 numero-div">
-            <div class="col-md-4">
+          <div class="col-sm-12 col-md-12 numero-div">
+            <div class="col-sm-4 col-md-4">
               <div class="image-couv">
                 <%= image_tag('magazines/mag_13.jpg', alt:'Dream Cup 13')%>
               </div>
             </div>
 
             <div class="col-md-offset-1 col-md-7">
-              <div class="flex-magazine">
+              <div class="flex-magazine col-sm-8">
                 <h2>Numéro #13 </h2>
                 <p class="date-sortie"> - sorti le 29 février 2016 </p>
               </div>
@@ -610,24 +640,22 @@
 
               <p>Bienvenue dans ce treizième numéro du Kippon Dream !</p>
 
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="col-md-6">
+                <div class="col-sm-12 col-md-12">
+                  <div class="col-sm-6 col-md-6">
                     <p>Découvrez dans ce numéro 13 trois de vos séries préférées <br />
                       - Infinite Revenge <br />
                       - Païn <br />
                       - Dawn of the Sorain</p>
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-sm-6 col-md-6">
                     <p>Accompagnées de la suite du light-novel <br />
                       - Angel's Fate </p>
                     <p>Ainsi que du one shot <br />
                       - Blue Flame Mutant Island</p>
                   </div>
                 </div>
-              </div>
 
-              <p>Toute l'équipe vous souhaite une très bonne lecture !</p>
+              <p class="col-sm-12">Toute l'équipe vous souhaite une très bonne lecture !</p>
 
             </div> <!-- col md 8 -->
           </div> <!-- col md 12 -->
@@ -638,8 +666,8 @@
         ----------------------------------------->
 
         <div class="row">
-          <div class="col-md-12 numero-div">
-            <div class="col-md-4">
+          <div class="col-sm-12 col-md-12 numero-div">
+            <div class="col-sm-4 col-md-4">
               <div class="image-couv">
                 <%= image_tag('magazines/mag_14.jpg', alt:'Dream Cup 14')%>
               </div>
@@ -647,7 +675,7 @@
 
 
             <div class="col-md-offset-1 col-md-7">
-              <div class="flex-magazine">
+              <div class="flex-magazine col-sm-8">
                 <h2>Numéro #14 </h2>
                 <p class="date-sortie"> - sorti le 15 avril 2016 </p>
               </div>
@@ -657,12 +685,14 @@
                 <%= image_tag('pair', alt: 'pair')%>
               </div>
 
-              <p>Déjà le quatorzième numéro du Kippon Dream !</p>
-              <p>Découvrez la suite de <br />
-                - Animix <br />
-                - Dragon(s) </p>
-              <p>Et le début en série de <br />
-                - Symphony of Angels </p>
+              <div class="col-sm-12">
+                <p>Déjà le quatorzième numéro du Kippon Dream !</p>
+                <p>Découvrez la suite de <br />
+                  - Animix <br />
+                  - Dragon(s) </p>
+                <p>Et le début en série de <br />
+                  - Symphony of Angels </p>
+              </div>
             </div> <!-- col md 8 -->
           </div> <!-- col md 12 -->
         </div> <!-- row -->
@@ -672,8 +702,8 @@
         ---------------------------------------->
 
         <div class="row">
-          <div class="col-md-12 numero-div">
-            <div class="col-md-4">
+          <div class="col-sm-12 col-md-12 numero-div">
+            <div class="col-sm-4 col-md-4">
               <div class="image-couv">
                 <%= image_tag('magazines/mag_15.jpg', alt:'Dream Cup 15')%>
               </div>
@@ -681,7 +711,7 @@
 
 
             <div class="col-md-offset-1 col-md-7">
-              <div class="flex-magazine">
+              <div class="flex-magazine col-sm-8">
                 <h2>Numéro #15 </h2>
                 <p class="date-sortie"> - sorti le 30 mai 2016  </p>
               </div>
@@ -691,14 +721,16 @@
                 <%= image_tag('impair.png', alt: 'impair')%>
               </div>
 
-              <p>Dans ce quinzième numéro, retrouvez les séries <br />
-                - Païn <br />
-                - Infinite Revenge</p>
-              <p>Découvrez également le premier chapitre de <br />
-                - 3 coups avant l'Aube, gagnante de la Dream Cup</p>
-              <p>Ainsi que les one shot d'Ataru et Julien Mestre <br />
-                - O.S.E.F. <br />
-                - Paranormal Investigations</p>
+              <div class="col-sm-12">
+                <p>Dans ce quinzième numéro, retrouvez les séries <br />
+                  - Païn <br />
+                  - Infinite Revenge</p>
+                <p>Découvrez également le premier chapitre de <br />
+                  - 3 coups avant l'Aube, gagnante de la Dream Cup</p>
+                <p>Ainsi que les one shot d'Ataru et Julien Mestre <br />
+                  - O.S.E.F. <br />
+                  - Paranormal Investigations</p>
+              </div>
             </div> <!-- col md 8 -->
           </div> <!-- col md 12 -->
         </div> <!-- row -->

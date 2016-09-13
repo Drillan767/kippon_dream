@@ -1,12 +1,64 @@
-/* tablettes entre 768px et 991px */
+/* style */
+
+header {
+    padding-top: 50px;
+}
+
+.navbar-sd {
+    display: none;
+}
 
 p {
     font-size: 1.4em;
 }
-.actualites {
-    height: 760px;
+
+/*.collapse {
+    display: none !important;
 }
+*/
+
+/* ACCUEIl */
 
 .actualites p {
     font-size: 1.4em;
+}
+
+.cadre {
+    width: 85%;
+}
+
+.reseaux-sociaux {
+    margin-top: 20px;
+}
+
+/* MAGS */
+
+.derniere_sortie img {
+    width: 80%;
+}
+
+.dernier_numero {
+    text-align: center;
+}
+
+.dernier_numero h1 {
+    text-align: center;
+}
+
+.dernier_numero p {
+    margin-top: -25px;
+}
+
+.image-couv img {
+    width: 100%;
+}
+
+.magazines {
+    height: 8610px;
+}
+
+/* MEMBRES */
+
+.modal-membres {
+    width: 85%;
 }

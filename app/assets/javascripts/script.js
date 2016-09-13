@@ -156,7 +156,7 @@ $('#ataru').click(function(){
         '<div class="modal-body">'+
         '<div class="row">'+
         '<div>'+
-        '<img src="/assets/presentation/ataru.png" alt="Ataru" class="img-presentation">'+
+        '<img src="/assets/presentation/ataru.png" alt="Ataru" class="img-presentation grosse-image">'+
         '<p>Je suis Ataru, amoureux du dessin, de la BD, de l’animation et du jeu vidéo. Au risque de passer pour un ancien, ' +
         ' mes maîtres sont Tezuka, Toriyama, Takahashi Rumiko et d’autres auteurs plus proches comme Franquin ou Gotlib.' +
         ' J’ai fait du dessin animé il y a quelques années avec Monsieur René Borg (un projet assez avancé est malheureusement en attente,' +
@@ -300,7 +300,7 @@ $('#julien').click(function(){
         '<div>'+
         '<img src="/assets/presentation/Julien.png" alt="Julien Mestre" class="img-presentation">'+
         '<p> Moi c’est Julien! Je fais partie de la génération Club Dorothée et j’aime énormément Dragon Ball, Saint Seiya,' +
-        'Captain Tsubasa… J’aime aussi Spider-Man et les comics Marvel. En ce moment je travaille sur les BD' +
+        'Captain Tsubasa… J’aime aussi Spider-Man et les comics Marvel. En ce moment je travaille sur les BD ' +
         'Dawn of the Sorain et  Paranormal Investigation. Ah oui, j’adore les jeux vidéo, le saucisson et le poulet !' +
         '</p>'+
         '</div>'+
