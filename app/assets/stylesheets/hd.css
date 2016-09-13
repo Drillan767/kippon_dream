@@ -71,3 +71,7 @@ header h1 {
 .image-couv {
 	margin-left: 115px;
 }
+
+hr {
+	display: none;
+}

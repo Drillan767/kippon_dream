@@ -89,3 +89,7 @@ header p {
 	.numero-div {
 		height: 575px;
 	}
+
+	hr {
+		display: none;
+	}

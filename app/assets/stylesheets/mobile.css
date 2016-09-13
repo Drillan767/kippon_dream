@@ -17,7 +17,7 @@ header h1 {
 }
 
 .image_header img {
-    width: 80%;
+    width: 40%;
 }
 
 .actualites p {
@@ -57,8 +57,78 @@ footer p {
     font-size: 2em;
 }
 
+/* MAGAZINES */
+
+.dernier_numero {
+    text-align: center;
+}
+
+.dernier_numero p {
+    font-size: 1.2em;
+}
+
+.dernier_numero img {
+    margin-left: -50px;
+    width: 180%;
+}
+
+.couv-derniere-sortie {
+    width: 45%;
+}
+
+.image-couv {
+    text-align: center;
+}
+
+.image-couv img {
+    width: 70%;
+}
+
+.cadre h1{
+    font-size: 2.2em;
+}
+
+.magazines {
+    height: 14330px;
+}
+
+hr {
+    color: black;
+    width: 80%;
+}
+
+/* MEMBRES */
+
+.page-membres {
+    height: 330px;
+}
+
+.header-bloc {
+    width: 85%;
+}
+
+.image-nom {
+    text-align: center;
+}
+
+#staff p {
+    text-align: justify;
+}
+
+#auteurs p {
+    text-align: justify;
+}
+.membres {
+    width: 50%;
+}
+
+.modal-membres {
+    width: 420px;
+}
+
 @media screen and (max-width: 400px) {
 
+    /* ACCUEIL */
     header h1 {
         font-size: 2em;
     }
@@ -85,4 +155,49 @@ footer p {
     .presentation h1,h2 {
         font-size: 1.5em;
     }
+
+    /* MAGAZINES */
+
+    .dernier_numero h1 {
+        margin-left: -30.3%;
+        width: 172.3%;
+    }
+
+    .dernier_numero img {
+        width: 260%;
+    }
+
+    .couv-derniere-sortie {
+        width: 75%;
+    }
+
+    .image-couv img {
+        width: 100% !important;
+    }
+
+    .mangadraft img {
+        width: 110%;
+    }
+
+    .mangadraft img:nth-child(2) {
+        width: 40%;
+        text-align: center;
+    }
+
+    /* MEMBRES */
+
+    .page-membres {
+        height: 360px;
+    }
+
+    .modal-membres {
+        width: 90%;
+    }
+
+    .img-presentation {
+        width: 85%;
+    }
 }
+
+
+
