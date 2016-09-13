@@ -1,0 +1,16 @@
+<%= simple_form_for (@contact), :html => { :class => 'iciLaClasseDuBordel'} do |f| %>
+
+    <h1>Contact</h1>
+
+    <!-- là tel que c'est, y'a juste le champ de texte sans le label -->
+    <!-- Le label ressemble à ça -->
+    <!-- <%= f.label :nom, :class => 'test' %> -->
+
+    <%= f.text_field :nom, :autofocus => true, :placeholder => 'Nom', :class => 'classe' %>
+    <%= f.text_field :email, :placeholder => 'E-mail', :class => 'classe' %>
+    <%= f.text_field :objet, :placeholder => 'Objet', :class => 'classe' %>
+    <%= f.text_area :message, :placeholder => 'Tapez votre message ici', :class => 'classe' %>
+    <%= f.submit 'Envoyer', { class: 'classe' } %>
+
+
+  <% end %>

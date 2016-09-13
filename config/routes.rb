@@ -7,8 +7,10 @@ Rails.application.routes.draw do
   match '/magazines', :to => 'pages#magazines', via: :get
   match '/boutique', :to => 'pages#boutique', via: :get
   match '/series', :to => 'pages#series', via: :get
-  match '/contact', :to => 'pages#contact', via: :get
   match '/actu', :to => 'pages#actualites', via: :get
+
+  get '/contact', to: 'contacts#new' , as: :new_contact
+  post '/contact', to: 'contacts#create', as: :contacts
 
 
 end

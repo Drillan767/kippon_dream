@@ -30,6 +30,10 @@
   </head>
   <body>
 
+  <% if flash[:success] %>
+      <div class="alert alert-success"><%= flash[:success] %></div>
+  <% end %>
+
   <%= yield %>
 
   <footer>
