@@ -30,7 +30,7 @@ header h1 {
 }
 
 .reseaux-sociaux {
-    margin-top: 0px;
+    margin-top: 0;
 }
 
 .cadre {
@@ -89,7 +89,7 @@ footer p {
 }
 
 .magazines {
-    height: 14330px;
+    height: 15000px;
 }
 
 hr {
@@ -182,6 +182,10 @@ hr {
     .mangadraft img:nth-child(2) {
         width: 40%;
         text-align: center;
+    }
+
+    .magazines {
+        height: 15000px;
     }
 
     /* MEMBRES */
