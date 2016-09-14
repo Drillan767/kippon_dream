@@ -89,7 +89,9 @@ footer p {
 }
 
 .magazines {
-    height: 15000px;
+    display: block;
+    padding-top: 70px;
+    padding-bottom: 80px;
 }
 
 hr {
@@ -147,9 +149,10 @@ hr {
     }
 
     .presentation {
-        height: 1500px;
         background: none;
-        background-color: #f69c00
+        background-color: #f69c00;
+        display: block;
+        padding-top: 20px;
     }
 
     .presentation h1,h2 {
@@ -185,7 +188,7 @@ hr {
     }
 
     .magazines {
-        height: 15000px;
+
     }
 
     /* MEMBRES */
