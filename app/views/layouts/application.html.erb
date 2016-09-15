@@ -34,9 +34,28 @@
   <%= yield %>
 
   <footer>
-    <a href="#" class="bouton_contact">Contact</a> <!-- bouton !-->
-    <p> Pour plus d'informations contactez-nous directement par mail à l'adresse <%= mail_to('kippondream@gmail.com')%></p>
-    <p>Retrouvez-nous également sur notre page <a href="https://www.facebook.com/KipponDream/?fref=ts">facebook</a> ou notre compte <a href="https://twitter.com/KipponDream/">twitter</a>.</p>
+    <div class="row">
+      <div class="container-fluid">
+        <div class="col-md-offset-2 col-md-2">
+          <ul class="">
+            <li> <%= link_to('MAGAZINES', '/magazines') %></li>
+            <li> <%= link_to('SERIES', '/series') %></li>
+            <li> <%= link_to('ACTUALITES', '/actu') %></li>
+            <li> <%= link_to('MEMBRES', '/membres') %></li>
+            <li> <%= link_to('CONTACT', '/contact') %></li>
+            <li> <%= link_to('BOUTIQUE', '/boutique') %></li>
+          </ul>
+
+        </div>
+
+        <div class="reseaux-sociaux col-md-offset-2 col-md-4">
+          <p>Retrouvez-nous sur les réseaux sociaux pour avoir les dernières nouvelles, illustrations.. Promis on est pas méchants !</p>
+          <div class="socialButs text-center">
+            <a class="btn btn-primary" href="https://www.facebook.com/KipponDream/"><span class="fa fa-facebook fa-2x" aria-hidden="true"></span></a>
+            <a class="btn btn-primary" href="https://twitter.com/KipponDream"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+          </div>
+        </div> <!-- container-fluid -->
+      </div> <!-- row-->
 
 
     <div class="mentions">
