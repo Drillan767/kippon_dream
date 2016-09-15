@@ -46,6 +46,9 @@
 
 </header>
 
+<% if flash[:success] %>
+    <div class="alert alert-success"><%= flash[:success] %></div>
+<% end %>
 <!-- Rajouter une colonne "pseudo" dans le MCD -->
 <!-- Y'en aura d'autres en plus mdr -->
 

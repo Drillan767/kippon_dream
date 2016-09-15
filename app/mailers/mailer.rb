@@ -3,9 +3,10 @@ class Mailer < ActionMailer::Base
 
   def contact_form(contact)
     @contact = contact
-    @to = 'jd.levarato@gmail.com'
+    @to = 'kippondream@gmail.com'
+    @from = 'Kippon Dream'
 
-    mail(to: @to, subject: 'Nouveau contact depuis le site !') do |f|
+    mail(to: @to, from: @from, subject: 'Nouveau contact depuis le site !') do |f|
       f.html
     end
   end
