@@ -686,9 +686,22 @@ $('#yumi').click(function(){
 
 var lien = window.location.pathname;
 if(lien == "/magazines"){
-    $('header').css("background", "url('assets/background/magazines.jpg");
+    $('header').css({
+        "background-image": "url(assets/background/magazines.jpg)",
+
+        "background-size": "100%",
+        "background-color": "#41a4d5"
+    });
 }else if(lien == "/membres"){
-    $('header').css("background", "url('assets/background/membres.jpg");
+    $('header').css({
+        "background-image": "url(assets/background/membres.jpg)",
+        "background-size": "100%",
+        "background-color": "#41a4d5"
+    });
 }else if(lien == "/contact"){
-    $('header').css("background", "url('assets/background/membres.jpg");
+    $('header').css({
+        "background-image": "url(assets/background/membres.jpg)",
+        "background-size": "100%",
+        "background-color": "#41a4d5"
+    });
 }
