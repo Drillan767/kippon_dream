@@ -6,7 +6,7 @@ class Contact
 
   attr_accessor :nom, :email, :objet, :message
 
-  validates :nom, :email, :email, :message, presence: true
+  validates :nom, :email, :objet, :message, presence: true
   validates :email, :format => { :with => %r{.+@.+\..+} }, allow_blank: true
 
   def persisted?
