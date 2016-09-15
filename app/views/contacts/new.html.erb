@@ -1,4 +1,4 @@
-<header>
+<header class="page-contact">
   <!-- NAV ORDI -->
   <nav class="navbar navbar-static-top navbar-sd">
     <div class="container-fluid">
@@ -43,6 +43,10 @@
     </div>
   </nav>
 
+  <div class="header-bloc">
+    <p>Vous l'avez voulu, le Kippon Dream l'a fait ! Découvrez chacun des membres de l'équipe avec
+      ses quelques mots accompagnés d'un dessin autoportrait !</p>
+  </div>
 
 </header>
 
@@ -55,28 +59,33 @@
 <%= simple_form_for (@contact), :html => { :class => 'form-horizontal'} do |f| %>
 
     <div class="row">
+      <div class="container-fluid">
 
       <div class="form-group col-xs-12 col-sm-12 col-md-12">
-        <%= f.label :nom, :class => 'col-xs-2 col-sm-2 col-md-2' %>
-        <%= f.text_field :nom, :autofocus => true, :placeholder => 'Votre nom', :class => 'col-xs-10 col-sm-10 col-md-10' %>
+        <%= f.label :nom, :class => 'col-xs-2 col-sm-2 col-md-offset-4 col-md-1' %>
+        <%= f.text_field :nom, :autofocus => true, :placeholder => 'Votre nom', :class => 'col-xs-10 col-sm-10 col-md-4' %>
       </div>
 
       <div class="form-group col-xs-12 col-sm-12 col-md-12">
-        <%= f.label :email, :class => 'col-xs-2 col-sm-2 col-md-2' %>
-        <%= f.text_field :email, :placeholder => 'ex : contact@kippondream.com', :class => 'col-xs-10 col-sm-10 col-md-10' %>
+        <%= f.label :email, :class => 'col-xs-2 col-sm-2 col-md-offset-4 col-md-1' %>
+        <%= f.text_field :email, :placeholder => 'ex : contact@kippondream.com', :class => 'col-xs-10 col-sm-10 col-md-4' %>
       </div>
 
       <div class="form-group col-xs-12 col-sm-12 col-md-12">
-        <%= f.label :objet, :class => 'col-xs-2 col-sm-2 col-md-2' %>
-        <%= f.text_field :objet, :placeholder => 'ex : Concours, dream cup...', :class => 'col-xs-10 col-sm-10 col-md-10' %>
+        <%= f.label :objet, :class => 'col-xs-2 col-sm-2 col-md-offset-4 col-md-1' %>
+        <%= f.text_field :objet, :placeholder => 'ex : Concours, dream cup...', :class => 'col-xs-10 col-sm-10 col-md-4' %>
       </div>
 
       <div class="form-group col-xs-12 col-sm-12 col-md-12">
-        <%= f.label :message, :class => 'col-xs-2' %>
-          <%= f.text_area :message, :placeholder => 'Tapez votre message ici', :class => 'col-xs-10' %>
+        <%= f.label :message, :class => 'col-xs-2 col-md-offset-4 col-md-1' %>
+          <%= f.text_area :message, :placeholder => 'Tapez votre message ici', :class => 'col-xs-10 col-md-4' %>
       </div>
 
-      <%= f.submit 'Envoyer', { class: 'pull-right btn-envoyer' } %>
+      <div class="col-md-offset-4 col-md-5">
+        <%= f.submit 'Envoyer', { class: 'pull-right' } %>
+      </div>
+
+
 
 <!--
         <select name="objet" id="objet" class="col-xs-10 col-sm-10 col-md-10">
@@ -87,7 +96,7 @@
         </select>
       </div>-->
 
-
+      </div> <!-- container-fluid -->
   </div> <!-- row -->
 
 
